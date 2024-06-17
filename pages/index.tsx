@@ -1,5 +1,10 @@
 import Layout from "../components/layout";
+import Frontpage from "../components/frontpage";
 
 export default function Index() {
-  return <Layout>Hello</Layout>;
+  return (
+    <Layout>
+      <Frontpage />
+    </Layout>
+  );
 }
