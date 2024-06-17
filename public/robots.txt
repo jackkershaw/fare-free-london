@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://farefreelondon.org
+
+# Sitemaps
+Sitemap: https://farefreelondon.org/sitemap.xml
