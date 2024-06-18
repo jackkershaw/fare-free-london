@@ -13,5 +13,6 @@ Website for the Fare Free London Campaign
 ## Building
 
 - Edited Vital signs nextjs template.
+- Replace template fonts with P22 Underground for the body and Halyard Display for the headings.
 
 ## Debugging
