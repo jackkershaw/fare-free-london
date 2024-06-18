@@ -2,7 +2,7 @@ import SocialIcons from "./social-icons";
 
 export default function Footer() {
   return (
-    <footer className="bg-customRed-50 w-full">
+    <footer className="bg-darkerBg w-full">
       <div className="p-5 lg:p-10 lg:mx-10 font-serif justify-between space-y-10 lg:space-y-0 flex flex-col lg:flex-row lg:items-end">
         <SocialIcons />
         <div className="flex items-center">
@@ -18,9 +18,9 @@ export default function Footer() {
               href="https://www.jackkershaw.net"
               target="_blank"
               className="font-bold
-              text-customRed-800
-              hover:text-customRed-950
-              active:text-customRed-500"
+              text-link
+              hover:text-hover
+              active:text-link"
               aria-label="link to Jack Kershaw's website"
             >
               Jack Kershaw.
@@ -31,7 +31,7 @@ export default function Footer() {
             <a
               href="https://github.com/jones58/fare-free-london"
               target="_blank"
-              className="font-bold text-customRed-800 hover:text-customRed-950 active:text-customRed-500"
+              className="font-bold text-link hover:text-hover active:text-link"
               aria-label="link to the Fare Free London GitHub repository"
             >
               Github.

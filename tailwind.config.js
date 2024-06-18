@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       colors: {
         darkerBg: "#ebe5d4",
-        heading: "#4760a5",
+        link: "#4760a5",
         hover: "#eB5a4a",
         subHeading: "#eB5a4a",
         customRed: {

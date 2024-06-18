@@ -17,14 +17,14 @@ export default function Header() {
         <div className="flex flex-row items-end justify-between px-5 lg:px-0 lg:justify-start lg:space-y-10 bg-darkerBg">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden text-5xl text-heading pr-5 pb-8"
+            className="lg:hidden text-5xl text-link pr-5 pb-8"
             type="button"
             aria-label="menu"
           >
             {menuOpen ? (
-              <span className="icon-[mdi--arrow-up] text-heading"></span>
+              <span className="icon-[mdi--arrow-up] text-link"></span>
             ) : (
-              <span className="icon-[mdi--hamburger-menu] text-heading"></span>
+              <span className="icon-[mdi--hamburger-menu] text-link"></span>
             )}
           </button>
           <Link href="/" className="max-h-[220px] ">
@@ -51,21 +51,21 @@ export default function Header() {
               <div className="flex flex-col space-y-12 text-4xl font-sans py-10 pl-5">
                 <Link
                   href="/aims"
-                  className="text-heading hover:text-hover active:text-heading"
+                  className="text-link hover:text-hover active:text-link"
                   aria-label="link to the aims page"
                 >
                   Our Aims
                 </Link>
                 <Link
                   href="/news?category="
-                  className="text-heading hover:text-hover active:text-heading"
+                  className="text-link hover:text-hover active:text-link"
                   aria-label="link to the news page"
                 >
                   Latest News
                 </Link>
                 <Link
                   href="/getinvolved"
-                  className="text-heading hover:text-hover active:text-heading"
+                  className="text-link hover:text-hover active:text-link"
                   aria-label="link to the get involved page"
                 >
                   Get Involved
@@ -80,14 +80,14 @@ export default function Header() {
             <div className="flex flex-row items-center space-x-10 text-3xl font-sans pb-6">
               <Link
                 href="/aims"
-                className="text-heading hover:text-hover active:text-heading"
+                className="text-link hover:text-hover active:text-link"
                 aria-label="link to the aims page"
               >
                 Our Aims
               </Link>
               <Link
                 href="/news"
-                className="text-heading hover:text-hover active:text-heading"
+                className="text-link hover:text-hover active:text-link"
                 aria-label="link to the news page"
               >
                 Latest News
@@ -95,7 +95,7 @@ export default function Header() {
 
               <Link
                 href="/getinvolved"
-                className="text-heading hover:text-hover active:text-heading"
+                className="text-link hover:text-hover active:text-link"
                 aria-label="link to the get involved page"
               >
                 Get Involved
