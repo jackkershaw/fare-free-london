@@ -26,7 +26,7 @@ export default function CoverImage({
     />
   );
   return (
-    <div className="relative min-w-[30vw] min-h-[30vh] lg:min-w-[21vw] lg:min-h-[25vh]">
+    <div className="relative min-w-[30vw] min-h-[40vh] lg:min-w-[21vw] lg:min-h-[25vh]">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}

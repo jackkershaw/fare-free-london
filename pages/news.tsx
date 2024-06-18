@@ -18,7 +18,7 @@ export default function News({ allPosts: { edges }, Categories }) {
   return (
     <div>
       <Layout>
-        <div className="lg:grid lg:grid-cols-4 lg:gap-x-5 lg:gap-y-5">
+        <div className="lg:grid lg:grid-cols-3 lg:gap-x-5 lg:gap-y-5">
           {filteredPosts.map(({ node }) => (
             <PostPreview
               key={node.slug}

@@ -13,7 +13,7 @@ export default function PostPreview({
     : "";
 
   return (
-    <div className="mb-6 lg:mb-0">
+    <div className="mb-6 lg:mb-0 bg-darkerBg bg-opacity-30 hover:bg-opacity-50 p-10">
       <div className="flex flex-col space-y-2 lg:space-y-3">
         {coverImage && (
           <CoverImage
@@ -22,7 +22,6 @@ export default function PostPreview({
             slug={slug}
           />
         )}
-
         <h1 className="text-2xl text-link hover:text-hover capitalize">
           <Link
             href={`/posts/${slug}`}
