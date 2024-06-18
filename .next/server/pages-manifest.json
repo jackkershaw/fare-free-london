@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/aims": "pages/aims.js",
-  "/getinvolved": "pages/getinvolved.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/getinvolved": "pages/getinvolved.js"
 }

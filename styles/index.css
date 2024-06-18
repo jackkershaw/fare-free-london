@@ -121,12 +121,12 @@
 }
 
 * {
-  @apply text-customRed-950;
+  @apply text-black;
 }
 
 html {
-  @apply bg-neutral-50;
-  @apply text-customRed-950;
+  @apply bg-lighterBg;
+  @apply text-black;
 }
 
 h1 {

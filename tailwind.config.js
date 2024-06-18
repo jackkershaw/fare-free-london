@@ -13,6 +13,8 @@ module.exports = {
         link: "#4760a5",
         hover: "#eB5a4a",
         subHeading: "#eB5a4a",
+        blackText: "#000000",
+        lighterBg: "#f5f4f0",
         customRed: {
           100: "#ffe2d4",
           200: "#ffc0a8",

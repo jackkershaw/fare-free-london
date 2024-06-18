@@ -42,7 +42,7 @@ export default function HeroPost({
         className="text-lg font-bold font-sans text-primary-500"
       >
         {" "}
-        <div className="bg-customRed-800 mb-10 lg:mb-0 p-5 w-full text-neutral-50 hover:bg-customRed-950 active:bg-customRed-500 right-0">
+        <div className="bg-customRed-800 mb-10 lg:mb-0 p-5 w-full text--50 hover:bg-customRed-950 active:bg-customRed-500 right-0">
           {" "}
           Read The Latest Issue
         </div>

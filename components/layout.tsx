@@ -41,7 +41,7 @@ export default function Layout({ children }) {
           },
         }}
       >
-        <main className="bg-neutral-50 text-customRed-950 px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
+        <main className="bg-lighterBg text-customRed-950 px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
           {children}
         </main>
       </motion.div>
