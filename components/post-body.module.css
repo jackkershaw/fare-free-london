@@ -55,7 +55,7 @@
 }
 
 .content pre {
-  @apply whitespace-pre overflow-x-auto p-4 text-sm leading-tight border border-link bg-darkerBg;
+  @apply whitespace-pre overflow-x-auto p-4 text-sm leading-tight border border-link bg-darkerBg bg-opacity-30 hover:bg-opacity-50;
 }
 
 .content figcaption {
@@ -63,7 +63,7 @@
 }
 
 .content blockquote {
-  @apply border-l-4 border-link bg-darkerBg italic ml-0 py-4 px-6;
+  @apply border-l-4 border-link bg-darkerBg bg-opacity-30 hover:bg-opacity-50 italic ml-0 py-4 px-6;
 }
 
 .content blockquote p {
