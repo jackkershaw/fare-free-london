@@ -17,7 +17,7 @@ module.exports = {
           400: "#ff5d38",
           500: "#fe3311",
           600: "#ef1a07",
-          700: "#c60d08",
+          700: "#4760a5",
           800: "#9d0f11",
           900: "#7e1011",
           950: "#440609",
@@ -29,7 +29,7 @@ module.exports = {
       },
       fontFamily: {
         serif: ["var(--font-P22Underground)", "serif"],
-        sans: ["var(--font-Halyard)", "sans-serif"],
+        sans: ["var(--font-Dapifer)", "sans-serif"],
       },
     },
   },

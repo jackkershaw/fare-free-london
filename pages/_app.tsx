@@ -19,20 +19,20 @@ const P22Underground = localFont({
   variable: "--font-P22Underground",
 });
 
-const Halyard = localFont({
+const Dapifer = localFont({
   src: [
     {
-      path: "./fonts/HalyardDisplay/Bold/HalyardDisplay-Bold.otf",
+      path: "./fonts/Dapifer/Bold/Dapifer-Bold.otf",
       weight: "700",
       style: "normal",
     },
   ],
-  variable: "--font-Halyard",
+  variable: "--font-Dapifer",
 });
 
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <main className={`${P22Underground.variable} ${Halyard.variable}`}>
+    <main className={`${P22Underground.variable} ${Dapifer.variable}`}>
       <Component {...pageProps} />
     </main>
   );
