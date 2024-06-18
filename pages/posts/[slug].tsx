@@ -84,7 +84,7 @@ export default function Post({ post, posts }) {
               <div className=" mx-auto max-w-2xl pb-10">
                 <div className="flex flex-row justify-end">
                   <a
-                    className="text-customRed-800 hover:text-customRed-950 active:text-customRed-500 font-sans font-bold pb-4 text"
+                    className="text-link hover:text-hover active:text-link font-sans font-bold pb-4 text"
                     aria-label="link to view PDF full screen"
                     href={post.pdf.pdf.node.mediaItemUrl}
                     target="_blankl"
@@ -110,7 +110,7 @@ export default function Post({ post, posts }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon-[mdi--twitter] text-customRed-800 hover:text-customRed-950 active:text-customRed-500"></span>
+                <span className="icon-[mdi--twitter] text-link hover:text-hover active:text-link"></span>
               </a>
               <a
                 href={`https://wa.me/?text=${encodeURIComponent(
@@ -119,7 +119,7 @@ export default function Post({ post, posts }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon-[mdi--whatsapp] text-customRed-800 hover:text-customRed-950 active:text-customRed-500"></span>
+                <span className="icon-[mdi--whatsapp] text-link hover:text-hover active:text-link"></span>
               </a>
 
               <a
@@ -127,7 +127,7 @@ export default function Post({ post, posts }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="icon-[mdi--facebook]  text-customRed-800 hover:text-customRed-950 active:text-customRed-500"></span>
+                <span className="icon-[mdi--facebook]  text-link hover:text-hover active:text-link"></span>
               </a>
               <a
                 href={`mailto:?subject=${encodeURIComponent(
@@ -136,7 +136,7 @@ export default function Post({ post, posts }) {
                   "https://farefreelondon.org/posts/" + post.slug
                 )}`}
               >
-                <span className="icon-[mdi--email] text-customRed-800 hover:text-customRed-950 active:text-customRed-500"></span>
+                <span className="icon-[mdi--email] text-link hover:text-hover active:text-link"></span>
               </a>
             </div>
           </div>

@@ -1,3 +1,3 @@
 export default function SectionSeparator() {
-  return <hr className="border-customRed-700 my-5" />;
+  return <hr className="border-link my-5" />;
 }

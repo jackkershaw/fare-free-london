@@ -22,13 +22,8 @@ export default function PostPreview({
             slug={slug}
           />
         )}
-        <Link
-          className="text-customRed-950 uppercase text-sm font-bold font-sans"
-          href={`/news?category=${category}`}
-        >
-          {category}
-        </Link>
-        <h1 className="text-2xl text-customRed-700 hover:text-customRed-950 capitalize">
+
+        <h1 className="text-2xl text-link hover:text-hover capitalize">
           <Link
             href={`/posts/${slug}`}
             dangerouslySetInnerHTML={{ __html: title }}

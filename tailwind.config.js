@@ -15,18 +15,6 @@ module.exports = {
         subHeading: "#eB5a4a",
         blackText: "#000000",
         lighterBg: "#f5f4f0",
-        customRed: {
-          100: "#ffe2d4",
-          200: "#ffc0a8",
-          300: "#ff9471",
-          400: "#ff5d38",
-          500: "#fe3311",
-          600: "#ef1a07",
-          700: "#4760a5",
-          800: "#9d0f11",
-          900: "#7e1011",
-          950: "#000000",
-        },
       },
       boxShadow: {
         small: "0 5px 10px rgba(0, 0, 0, 0.12)",
