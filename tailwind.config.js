@@ -9,8 +9,11 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        darkerBg: "#ebe5d4",
+        heading: "#4760a5",
+        hover: "#eB5a4a",
+        subHeading: "#eB5a4a",
         customRed: {
-          50: "#fff2ed",
           100: "#ffe2d4",
           200: "#ffc0a8",
           300: "#ff9471",
@@ -20,7 +23,7 @@ module.exports = {
           700: "#4760a5",
           800: "#9d0f11",
           900: "#7e1011",
-          950: "#440609",
+          950: "#000000",
         },
       },
       boxShadow: {

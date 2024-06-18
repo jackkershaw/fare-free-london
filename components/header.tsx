@@ -12,18 +12,19 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-customRed-50 lg:px-10 pb-5 mb-5 lg:mb-0">
+    <header className="bg-darkerBg lg:px-10 pb-5 mb-5 lg:mb-0">
       <div className="lg:grid lg:grid-cols-2 lg:mx-10">
-        <div className="flex flex-row items-end justify-between px-5 lg:px-0 lg:justify-start lg:space-y-10 bg-customRed-50">
+        <div className="flex flex-row items-end justify-between px-5 lg:px-0 lg:justify-start lg:space-y-10 bg-darkerBg">
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="lg:hidden text-5xl text-customRed-700 pr-5"
+            className="lg:hidden text-5xl text-heading pr-5 pb-8"
+            type="button"
             aria-label="menu"
           >
             {menuOpen ? (
-              <span className="icon-[mdi--arrow-up] text-customRed-700"></span>
+              <span className="icon-[mdi--arrow-up] text-heading"></span>
             ) : (
-              <span className="icon-[mdi--hamburger-menu] text-customRed-700"></span>
+              <span className="icon-[mdi--hamburger-menu] text-heading"></span>
             )}
           </button>
           <Link href="/" className="max-h-[220px] ">
@@ -42,39 +43,32 @@ export default function Header() {
         <div className="flex flex-row lg:flex-col lg:justify-end lg:hidden">
           {menuOpen && (
             <motion.div
-              className="absolute lg:static space-y-8 justify-start w-full flex flex-col z-50 bg-customRed-50 pl-5 lg:pl-0"
+              className="absolute lg:static space-y-8 justify-start w-full flex flex-col z-50 bg-darkerBg h-[80vh] pl-5 lg:pl-0"
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
             >
-              <div className="flex flex-col lg:flex-row lg:items-center space-y-5 lg:space-y-0 lg:space-x-8 text-3xl font-sans pb-5">
+              <div className="flex flex-col space-y-12 text-4xl font-sans py-10 pl-5">
                 <Link
                   href="/aims"
-                  className="text-customRed-700 hover:text-customRed-950 active:text-customRed-500"
+                  className="text-heading hover:text-hover active:text-heading"
                   aria-label="link to the aims page"
                 >
-                  AIMS
+                  Our Aims
                 </Link>
                 <Link
                   href="/news?category="
-                  className="text-customRed-700 hover:text-customRed-950 active:text-customRed-500"
+                  className="text-heading hover:text-hover active:text-heading"
                   aria-label="link to the news page"
                 >
-                  news
-                </Link>
-                <Link
-                  href="/issues"
-                  className="text-customRed-700 hover:text-customRed-950 active:text-customRed-500"
-                  aria-label="link to the issues page"
-                >
-                  ISSUES
+                  Latest News
                 </Link>
                 <Link
                   href="/getinvolved"
-                  className="text-customRed-700 hover:text-customRed-950 active:text-customRed-500"
-                  aria-label="link to the geti nvolved page"
+                  className="text-heading hover:text-hover active:text-heading"
+                  aria-label="link to the get involved page"
                 >
-                  get involved
+                  Get Involved
                 </Link>
               </div>
             </motion.div>
@@ -82,29 +76,29 @@ export default function Header() {
         </div>
         {/* desktop menu */}
         <div className="hidden lg:flex flex-row lg:flex-col lg:justify-end">
-          <div className="space-x-10 space-y-8 lg:space-y-0 lg:items-center justify-end w-full flex flex-col lg:flex-row z-50 bg-customRed-50">
-            <div className="flex flex-col lg:flex-row lg:items-center space-y-5 lg:space-y-0 lg:space-x-8 text-3xl font-sans pl-10 lg:pl-0">
+          <div className="space-x-10 space-y-8 lg:space-y-0 lg:items-center justify-end w-full flex flex-col lg:flex-row z-50 bg-darkerBg">
+            <div className="flex flex-row items-center space-x-10 text-3xl font-sans pb-6">
               <Link
                 href="/aims"
-                className="text-customRed-700 hover:text-customRed-950 active:text-customRed-500"
+                className="text-heading hover:text-hover active:text-heading"
                 aria-label="link to the aims page"
               >
-                aims
+                Our Aims
               </Link>
               <Link
                 href="/news"
-                className="text-customRed-700 hover:text-customRed-950 active:text-customRed-500"
+                className="text-heading hover:text-hover active:text-heading"
                 aria-label="link to the news page"
               >
-                news
+                Latest News
               </Link>
 
               <Link
                 href="/getinvolved"
-                className="text-customRed-700 hover:text-customRed-950 active:text-customRed-500"
+                className="text-heading hover:text-hover active:text-heading"
                 aria-label="link to the get involved page"
               >
-                get involved
+                Get Involved
               </Link>
             </div>
           </div>
