@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/aims": "pages/aims.js",
   "/": "pages/index.js",
   "/news": "pages/news.js"
 }
