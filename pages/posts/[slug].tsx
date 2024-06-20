@@ -100,7 +100,7 @@ export default function Post({ post, posts }) {
               </div>
             )}
           </article>
-          <div className="flex flex-col justify-start lg:grid lg:grid-cols-4 ">
+          <div className="flex flex-col justify-start lg:grid lg:grid-cols-4 pt-2">
             <h1 className="text-2xl font-bold font-sans">
               Share this article:
             </h1>
