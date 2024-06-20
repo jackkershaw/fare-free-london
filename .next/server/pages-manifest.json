@@ -1,9 +1,13 @@
 {
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/aims": "pages/aims.js",
-  "/news": "pages/news.js",
+  "/_app": "pages/_app.js",
+  "/feed": "pages/feed.js",
+  "/404": "pages/404.js",
   "/": "pages/index.js",
-  "/getinvolved": "pages/getinvolved.js"
+  "/aims": "pages/aims.js",
+  "/getinvolved": "pages/getinvolved.js",
+  "/_error": "pages/_error.js",
+  "/news": "pages/news.js",
+  "/issues": "pages/issues.js",
+  "/posts/[slug]": "pages/posts/[slug].js"
 }
