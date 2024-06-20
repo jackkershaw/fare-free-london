@@ -18,5 +18,6 @@ Website for the Fare Free London Campaign
 - Made a favicon using a vector from [public domain vectors](https://publicdomainvectors.org), putting it through [realfavicongenerator.net](https://realfavicongenerator.net/).
 - Changed the colour scheme. It was helpful to go through the template looking for customRed (using Search on all files) and replacing it with my own colours.
 - Set up wordpress on admin.farefreelondon.org subdomain and Vercel on main domain: farefreelondon.org.
+- The site was looking quite cold so i wanted to add some colour. I added an svg from another project I did a few years ago, with bright colourful lines... CONTINUE
 
 ## Debugging
