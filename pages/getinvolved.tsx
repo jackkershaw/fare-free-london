@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import { getEventsPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
-import styles from "./about.module.css";
+import styles from "./WordpressText.module.css";
 
 interface Props {
   content: string;
