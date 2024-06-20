@@ -27,20 +27,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/aims": [
+    "/getinvolved": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/aims.js"
-    ],
-    "/news": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/news.js"
-    ],
-    "/posts/[slug]": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/posts/[slug].js"
+      "static/chunks/pages/getinvolved.js"
     ]
   },
   "ampFirstPages": []

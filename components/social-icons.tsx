@@ -20,7 +20,7 @@ export default function SocialIcons() {
         <span className="icon-[mdi--instagram] text-link hover:text-hover active:text-link p-5 lg:p-0"></span>
       </a>
       <a
-        href="https://vitalsignscontenteditor.co.uk/rss"
+        href="https://admin.farefreelondon.org/rss"
         target="_blank"
         className="flex items-end justify-end"
         aria-label="link to the Fare Free London Magazine RSS feed"

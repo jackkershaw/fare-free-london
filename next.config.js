@@ -15,7 +15,7 @@ module.exports = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "jackk123.sg-host.com",
+        hostname: "admin.farefreelondon.org",
         port: "",
         pathname: "/**",
       },
