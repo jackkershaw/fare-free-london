@@ -9,12 +9,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        darkerBg: "#ebe5d4",
+        darkerBg: "#f3efe4",
         link: "#4760a5",
         hover: "#eB5a4a",
-        subHeading: "#eB5a4a",
+        subHeading: "#696969",
         blackText: "#000000",
         lighterBg: "#f5f4f0",
+        black: "#322e2f",
       },
       boxShadow: {
         small: "0 5px 10px rgba(0, 0, 0, 0.12)",
@@ -22,7 +23,7 @@ module.exports = {
       },
       fontFamily: {
         serif: ["var(--font-P22Underground)", "serif"],
-        sans: ["var(--font-Dapifer)", "sans-serif"],
+        sans: ["var(--font-P22Underground)", "sans-serif"],
       },
     },
   },

@@ -19,20 +19,9 @@ const P22Underground = localFont({
   variable: "--font-P22Underground",
 });
 
-const Dapifer = localFont({
-  src: [
-    {
-      path: "./fonts/Dapifer/Bold/Dapifer-Bold.otf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-Dapifer",
-});
-
 function MyApp({ Component, pageProps, router }: AppProps) {
   return (
-    <main className={`${P22Underground.variable} ${Dapifer.variable}`}>
+    <main className={`${P22Underground.variable} `}>
       <Component {...pageProps} />
     </main>
   );

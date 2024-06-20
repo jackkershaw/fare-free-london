@@ -13,7 +13,7 @@ Website for the Fare Free London Campaign
 ## Building
 
 - Edited Vital signs nextjs template.
-- Replace template fonts with P22 Underground for the body and Dapifer for the headings.
+- Replace template fonts with P22 Underground for the body and headings.
 - Improved the mobile heading by making it fill the screen on opening on mobile. This gives a more polished look and prevents the user clicking in the wrong place.
 - Made a favicon using a vector from [public domain vectors](https://publicdomainvectors.org), putting it through [realfavicongenerator.net](https://realfavicongenerator.net/).
 - Changed the colour scheme. It was helpful to go through the template looking for customRed (using Search on all files) and replacing it with my own colours.

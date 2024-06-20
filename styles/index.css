@@ -104,24 +104,25 @@
 }
 
 @font-face {
-  font-family: P22Underground;
+  font-family: "P22Underground";
   font-style: normal;
-  font-weight: bold;
+  font-weight: 400;
+  font-stretch: normal;
+  src: url("/fonts/P22Underground/Book/P22UndergroundBook1.otf")
+    format("opentype");
+}
+
+@font-face {
+  font-family: "P22Underground";
+  font-style: normal;
+  font-weight: 700;
   font-stretch: normal;
   src: url("/fonts/P22Underground/DemiBold/P22UndergroundDemiBold.otf")
     format("opentype");
 }
 
-@font-face {
-  font-family: "Dapifer";
-  font-style: normal;
-  font-weight: 700;
-  src: url("/fonts/HalyardDisplay/Bold/Dapifer-Bold.otf")
-    format("truetype");
-}
-
 * {
-  @apply text-black;
+  @apply text-black font-sans;
 }
 
 html {
@@ -129,6 +130,16 @@ html {
   @apply text-black;
 }
 
-h1 {
-  @apply font-bold font-sans;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7 {
+  @apply font-bold;
+}
+
+p {
+  @apply font-serif;
 }

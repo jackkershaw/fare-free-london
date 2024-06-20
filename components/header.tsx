@@ -48,7 +48,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
             >
-              <div className="flex flex-col space-y-12 text-4xl font-sans py-10 pl-5">
+              <div className="flex flex-col space-y-12 text-4xl font-sans font-bold py-10 pl-5">
                 <Link
                   href="/aims"
                   className="text-link hover:text-hover active:text-link"
@@ -77,7 +77,7 @@ export default function Header() {
         {/* desktop menu */}
         <div className="hidden lg:flex flex-row lg:flex-col lg:justify-end">
           <div className="space-x-10 space-y-8 lg:space-y-0 lg:items-center justify-end w-full flex flex-col lg:flex-row z-50 bg-darkerBg">
-            <div className="flex flex-row items-center space-x-10 text-3xl font-sans pb-6">
+            <div className="flex flex-row items-center space-x-10 text-3xl font-sans font-bold pb-6">
               <Link
                 href="/aims"
                 className="text-link hover:text-hover active:text-link"
