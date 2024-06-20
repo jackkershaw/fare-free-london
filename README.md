@@ -19,5 +19,7 @@ Website for the Fare Free London Campaign
 - Changed the colour scheme. It was helpful to go through the template looking for customRed (using Search on all files) and replacing it with my own colours.
 - Set up wordpress on admin.farefreelondon.org subdomain and Vercel on main domain: farefreelondon.org.
 - The site was looking quite cold so i wanted to add some colour. I added an svg from another project I did a few years ago, with bright colourful lines. At first I wanted this at the bottom and top, but found having at the top a bit overwhelming. I kept it at the bottom and wrapped it in a component as "tubelines" - in a way it reminds me of how the old OpenAI site used to look under the footer.
+- Removed frontpage component and added to index.tsx. Receiving content through Wordpress to allow client to control content.
+- Used Responsively to get responsive design right - see my LinkedIn about this [here](https://www.linkedin.com/posts/jackkershaw_webdevelopment-responsivedesign-devtools-activity-7209579627588005889-Bwso?utm_source=share&utm_medium=member_desktop).
 
 ## Debugging
