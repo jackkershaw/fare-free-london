@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getEventsPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
 import styles from "./WordpressText.module.css";
+import Form from "../components/form";
 
 interface Props {
   content: string;
@@ -26,6 +27,7 @@ export default function Events({ content, featuredImage }: Props) {
             className={`font-serif text-lg prose ${styles.content}`}
             dangerouslySetInnerHTML={{ __html: content }}
           ></div>
+          <Form />
         </div>
       </Layout>
     </div>
