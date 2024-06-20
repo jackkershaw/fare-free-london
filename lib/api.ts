@@ -199,6 +199,29 @@ export async function getPostAndMorePosts(slug) {
   return data;
 }
 
+export async function getFrontPageContent(
+  FrontPageSlug = "front-page"
+) {
+  const data = await fetchAPI(`
+  query getFrontPageContent {
+    pages(where: {name: "front-page"}) {
+      nodes {
+        content
+        featuredImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+      }
+    }
+  }
+      `);
+  const content = data?.pages?.nodes[0]?.content || "";
+  const featuredImage = data?.pages?.nodes[0]?.featuredImage || "";
+  return { content, featuredImage };
+}
+
 export async function getAboutPageContent(aboutPageSlug = "about") {
   const data = await fetchAPI(`
   query getAboutPageContent {
