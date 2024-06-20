@@ -16,8 +16,11 @@ interface Props {
 export default function Index({ content, featuredImage }: Props) {
   return (
     <Layout>
-      <div className={`${styles.content}`}>
-        <div dangerouslySetInnerHTML={{ __html: content }}></div>
+      <div className="grid lg:grid-cols-2">
+        <div className={`${styles.content}`}>
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        </div>
+        <img src="/images/overground.jpg" className="rounded-lg"></img>
       </div>
     </Layout>
   );
