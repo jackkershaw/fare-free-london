@@ -1,9 +1,13 @@
+.content {
+  @apply prose;
+}
+
 .content p,
 .content ul,
 .content ol,
 .content blockquote {
   @apply font-serif;
-  @apply prose-lg;
+  @apply prose-xl;
   @apply leading-normal;
 }
 

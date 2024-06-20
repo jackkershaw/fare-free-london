@@ -139,7 +139,3 @@ h6,
 h7 {
   @apply font-bold;
 }
-
-p {
-  @apply font-serif;
-}
