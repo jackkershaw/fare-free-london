@@ -5,6 +5,7 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import TubeLines from "./tubelines";
 
 export default function Layout({ children }) {
   return (
@@ -46,6 +47,7 @@ export default function Layout({ children }) {
         </main>
       </motion.div>
       <Footer />
+      <TubeLines />
     </div>
   );
 }

@@ -104,11 +104,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-      <img
-        src="images/desktop.svg"
-        alt="desktop"
-        className="hidden lg:block"
-      />
     </header>
   );
 }
