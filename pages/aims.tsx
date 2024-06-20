@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import Image from "next/image";
 import { getAboutPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
-import styles from "./about.module.css";
+import styles from "./WordpressText.module.css";
 
 interface Props {
   content: string;
@@ -21,7 +21,7 @@ export default function About({ content, featuredImage }: Props) {
         <div>
           <h1 className="font-sans text-2xl lg:text-4xl pb-5">Aims</h1>
           <div
-            className={`font-serif text-lg prose ${styles.content}`}
+            className={` ${styles.content}`}
             dangerouslySetInnerHTML={{ __html: content }}
           ></div>
         </div>
