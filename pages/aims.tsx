@@ -19,7 +19,6 @@ export default function About({ content, featuredImage }: Props) {
     <div>
       <Layout>
         <div>
-          <h1 className="font-sans text-2xl lg:text-4xl pb-5">Aims</h1>
           <div
             className={` ${styles.content}`}
             dangerouslySetInnerHTML={{ __html: content }}

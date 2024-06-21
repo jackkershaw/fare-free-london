@@ -11,6 +11,8 @@ export default function Header() {
     closed: { opacity: 0, y: -10 },
   };
 
+  const closeMenu = () => setMenuOpen(false);
+
   return (
     <header className="bg-darkerBg lg:px-10 pb-5 mb-5 lg:mb-0">
       <div className="lg:grid lg:grid-cols-2 lg:mx-10">
@@ -53,6 +55,7 @@ export default function Header() {
                   href="/aims"
                   className="text-link hover:text-hover active:text-link"
                   aria-label="link to the aims page"
+                  onClick={closeMenu}
                 >
                   Our Aims
                 </Link>
@@ -60,6 +63,7 @@ export default function Header() {
                   href="/news?category="
                   className="text-link hover:text-hover active:text-link"
                   aria-label="link to the news page"
+                  onClick={closeMenu}
                 >
                   Latest News
                 </Link>
@@ -67,6 +71,7 @@ export default function Header() {
                   href="/getinvolved"
                   className="text-link hover:text-hover active:text-link"
                   aria-label="link to the get involved page"
+                  onClick={closeMenu}
                 >
                   Get Involved
                 </Link>
