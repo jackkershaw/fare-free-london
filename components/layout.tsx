@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import TubeLines from "./tubelines";
+import BackToTop from "./BackToTop";
 
 export default function Layout({ children }) {
   return (
@@ -45,6 +46,7 @@ export default function Layout({ children }) {
         <main className="bg-lighterBg text-black px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
           {children}
         </main>
+        <BackToTop />
       </motion.div>
       <Footer />
       <TubeLines />
