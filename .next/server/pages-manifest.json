@@ -3,8 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/posts/[slug]": "pages/posts/[slug].js",
   "/news": "pages/news.js",
-  "/getinvolved": "pages/getinvolved.js",
-  "/aims": "pages/aims.js"
+  "/posts/[slug]": "pages/posts/[slug].js"
 }
