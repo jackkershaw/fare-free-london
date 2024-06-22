@@ -47,6 +47,7 @@ export default function Meta() {
       <meta name="twitter:image" content="/images/banner-draft.png" />
 
       {/* Open Graph Meta Tags */}
+      <meta property="og:site_name" content="Fare Free London"></meta>
       <meta property="og:type" content="website" />
       <meta property="og:url" content="https://farefreelondon.org/" />
       <meta property="og:title" content="Fare Free London" />

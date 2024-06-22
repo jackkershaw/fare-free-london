@@ -1,4 +1,10 @@
 {
+  "name": "fare-free-london",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": "jones58",
+  "description": "Fare Free London",
+  "homepage": "./",
   "private": true,
   "scripts": {
     "dev": "next",
