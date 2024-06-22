@@ -37,4 +37,5 @@ Website for the Fare Free London Campaign
   - All these things improved LCP from 11.3s to 2.8s, bringing Performance score up from 67 to 96.
 - NextJS told me there was an issue with using a legacy prop, "layout", on images so i changed this, to use width and height with object-cover instead.
 - Used [NextJS docs](https://nextjs.org/docs/pages/building-your-application/configuring/debugging) for further debugging on both the server and client sides. In particular, the VScode debugging option was very useful.
-- There was an issue with builds on Vercel where sometimes the whole site would end up blank, and i'd have to redeploy. I fixed this by changing the details in the package.json as instructed in[this tutorial](https://www.youtube.com/watch?v=U89A0l6AM18).
+  - Used this to add the priority property to the banner image, as it was identified as part of the LCP.
+- There was an issue with builds on Vercel where sometimes the whole site would end up blank (at least requiring a reload), and i'd have to redeploy. I fixed this by changing the details in the package.json as instructed in[this tutorial](https://www.youtube.com/watch?v=U89A0l6AM18). As the issue was also a MIME type issue (according to a debugger), I used a vercel.json file to fix this, setting the content type to text/html.

@@ -1,0 +1,18 @@
+{
+  "headers": [
+    {
+      "source": "**/*.html",
+      "headers": [{ "key": "Content-Type", "value": "text/html" }]
+    },
+    {
+      "source": "**/*.js",
+      "headers": [
+        { "key": "Content-Type", "value": "application/javascript" }
+      ]
+    },
+    {
+      "source": "**/*.css",
+      "headers": [{ "key": "Content-Type", "value": "text/css" }]
+    }
+  ]
+}

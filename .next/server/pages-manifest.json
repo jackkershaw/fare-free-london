@@ -1,1 +1,6 @@
-{"/_app":"pages/_app.js","/404":"pages/404.html","/_document":"pages/_document.js","/feed":"pages/feed.html","/aims":"pages/aims.js","/issues":"pages/issues.js","/getinvolved":"pages/getinvolved.js","/_error":"pages/_error.js","/":"pages/index.js","/news":"pages/news.js","/posts/[slug]":"pages/posts/[slug].js"}
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/": "pages/index.js"
+}

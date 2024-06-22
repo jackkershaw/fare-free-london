@@ -33,10 +33,11 @@ export default function Header() {
             <div className="min-w-[250px] min-h-[250px] lg:min-w-[20vw] lg:min-h-[20vh] relative">
               <Image
                 src="/images/banner-draft.png"
-                alt="logo"
+                alt="logo for fare free london, written in P22 Underground font"
                 fill
                 className="object-contain object-center"
                 sizes="(100vw, 100vh)"
+                priority
               />
             </div>
           </Link>
