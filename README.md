@@ -32,4 +32,7 @@ Website for the Fare Free London Campaign
   - Switched to the next/image component to set the appropriate sizes.
   - Switched footer image to low priority
   - Preconnect to va.vercel-scripts.com to speed up the site.
+  - For production Image Optimization with Next.js, the optional 'sharp' package is strongly recommended. Run 'npm i sharp', and Next.js will use it automatically for Image Optimization.
+    Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
   - All these things improved LCP from 11.3s to 2.8s, bringing Performance score up from 67 to 96.
+  -
