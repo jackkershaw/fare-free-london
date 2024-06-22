@@ -28,7 +28,8 @@ export default function Index({ content, featuredImage }: Props) {
             height={475}
             src={featuredImage.node.sourceUrl}
             alt={featuredImage.node.altText}
-            loading="lazy"
+            loading="eager"
+            priority
           ></Image>
         </div>
       </div>

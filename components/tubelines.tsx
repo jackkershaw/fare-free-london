@@ -10,6 +10,7 @@ export default function TubeLines() {
         src="/images/desktop.png"
         alt="desktop"
         className="w-full h-40 object-cover pb-2"
+        fetchPriority="low"
       />
     </div>
   );

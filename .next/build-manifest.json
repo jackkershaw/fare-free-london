@@ -12,6 +12,11 @@
   ],
   "rootMainFiles": [],
   "pages": {
+    "/": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/index.js"
+    ],
     "/_app": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
@@ -22,15 +27,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/aims": [
+    "/news": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/aims.js"
-    ],
-    "/getinvolved": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/getinvolved.js"
+      "static/chunks/pages/news.js"
     ]
   },
   "ampFirstPages": []
