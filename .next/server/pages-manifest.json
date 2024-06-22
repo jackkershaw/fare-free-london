@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/news": "pages/news.js",
-  "/posts/[slug]": "pages/posts/[slug].js"
-}
+{"/_app":"pages/_app.js","/feed":"pages/feed.html","/_document":"pages/_document.js","/404":"pages/404.html","/getinvolved":"pages/getinvolved.js","/aims":"pages/aims.js","/":"pages/index.js","/news":"pages/news.js","/_error":"pages/_error.js","/issues":"pages/issues.js","/posts/[slug]":"pages/posts/[slug].js"}
