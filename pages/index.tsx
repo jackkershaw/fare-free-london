@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import { getFrontPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
 import styles from "./WordpressText.module.css";
+import Image from "next/image";
 
 interface Props {
   content: string;
@@ -20,7 +21,11 @@ export default function Index({ content, featuredImage }: Props) {
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
-        <img src="/images/overground.jpg" className="rounded-lg"></img>
+        <Image
+          src="/images/overground.jpg"
+          alt="people on an overground train in London"
+          className="rounded-lg"
+        ></Image>
       </div>
     </Layout>
   );

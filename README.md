@@ -29,3 +29,4 @@ Website for the Fare Free London Campaign
 
 - I noticed there was a bug in the mobile menu, where clicking on a link for a page you're already on didn't make it go away - I fixed this by adding an onClick event handler to each link to set the menuOpen state to false.
 - Some users were reporting slow loading times. I used unlighthouse to check the speed of the site.
+  - Switched to the next/image component to set the appropriate sizes.
