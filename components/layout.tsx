@@ -17,10 +17,6 @@ export default function Layout({ children }) {
           name="description"
           content={"Campaign for free public transport in London"}
         />
-        <link
-          rel="preconnect"
-          href="https://va.vercel-scripts.com/"
-        ></link>
       </Head>
       <Analytics />
       <SpeedInsights />
