@@ -21,11 +21,16 @@ export default function Index({ content, featuredImage }: Props) {
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
-        <Image
-          src="/images/overground.jpg"
-          alt="people on an overground train in London"
-          className="rounded-lg"
-        ></Image>
+        <div>
+          <Image
+            layout="responsive"
+            width={700}
+            height={475}
+            src={featuredImage.node.sourceUrl}
+            alt={featuredImage.node.altText}
+            className="rounded-lg object-center object-cover"
+          ></Image>
+        </div>
       </div>
     </Layout>
   );
