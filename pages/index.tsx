@@ -17,19 +17,18 @@ interface Props {
 export default function Index({ content, featuredImage }: Props) {
   return (
     <Layout>
-      <div className="grid lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
         <div>
           <Image
-            layout="responsive"
-            width={700}
-            height={475}
+            width="1080"
+            height="980"
             src={featuredImage.node.sourceUrl}
             alt={featuredImage.node.altText}
-            loading="eager"
-            priority
+            fetchPriority="low"
+            className="rounded-lg object-cover"
           ></Image>
         </div>
       </div>

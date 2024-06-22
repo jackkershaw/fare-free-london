@@ -36,3 +36,4 @@ Website for the Fare Free London Campaign
     Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
   - All these things improved LCP from 11.3s to 2.8s, bringing Performance score up from 67 to 96.
 - There was an issue [text](https://www.youtube.com/watch?v=U89A0l6AM18)
+- NextJS told me there was an issue with using a legacy prop, "layout", on images so i changed this to be width and height with object-fit
