@@ -35,5 +35,6 @@ Website for the Fare Free London Campaign
   - NextJS recommends optional 'sharp' package for image optimisation, so I installed it.
     Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
   - All these things improved LCP from 11.3s to 2.8s, bringing Performance score up from 67 to 96.
-- There was an issue [text](https://www.youtube.com/watch?v=U89A0l6AM18)
-- NextJS told me there was an issue with using a legacy prop, "layout", on images so i changed this to be width and height with object-fit
+- NextJS told me there was an issue with using a legacy prop, "layout", on images so i changed this, to use width and height with object-cover instead.
+- Used [NextJS docs](https://nextjs.org/docs/pages/building-your-application/configuring/debugging) for further debugging on both the server and client sides. In particular, the VScode debugging option was very useful.
+- There was an issue with builds on Vercel where sometimes the whole site would end up blank, and i'd have to redeploy. I fixed this by changing the details in the package.json as instructed in[this tutorial](https://www.youtube.com/watch?v=U89A0l6AM18).
