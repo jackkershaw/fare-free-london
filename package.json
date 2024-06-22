@@ -5,7 +5,7 @@
   "author": "jones58",
   "description": "Fare Free London",
   "repository": "https://github.com/jones58/fare-free-london",
-  "homepage": "./",
+  "homepage": "https://farefreelondon.org",
   "private": true,
   "scripts": {
     "dev": "NODE_OPTIONS='--inspect' next dev",
