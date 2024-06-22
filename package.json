@@ -8,7 +8,7 @@
   "homepage": "https://farefreelondon.org",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
