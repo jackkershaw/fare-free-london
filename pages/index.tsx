@@ -28,7 +28,7 @@ export default function Index({ content, featuredImage }: Props) {
             height={475}
             src={featuredImage.node.sourceUrl}
             alt={featuredImage.node.altText}
-            className="rounded-lg object-center object-cover"
+            loading="lazy"
           ></Image>
         </div>
       </div>
