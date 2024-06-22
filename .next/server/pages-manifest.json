@@ -1,6 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js"
-}
+{"/_app":"pages/_app.js","/_document":"pages/_document.js","/404":"pages/404.html","/feed":"pages/feed.html","/news":"pages/news.js","/":"pages/index.js","/getinvolved":"pages/getinvolved.js","/_error":"pages/_error.js","/aims":"pages/aims.js","/issues":"pages/issues.js","/posts/[slug]":"pages/posts/[slug].js"}
