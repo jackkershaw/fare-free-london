@@ -5,13 +5,13 @@ import localFont from "next/font/local";
 const P22Underground = localFont({
   src: [
     {
-      path: "./fonts/P22Underground/Book/P22UndergroundBook1.otf",
+      path: "/fonts/P22UndergroundBook.otf",
       weight: "400",
       style: "normal",
     },
 
     {
-      path: "./fonts/P22Underground/DemiBold/P22UndergroundDemiBold.otf",
+      path: "/fonts/P22UndergroundDemiBold.otf",
       weight: "700",
       style: "normal",
     },
