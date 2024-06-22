@@ -17,6 +17,10 @@ export default function Layout({ children }) {
           name="description"
           content={"Campaign for free public transport in London"}
         />
+        <link
+          rel="preconnect"
+          href="https://va.vercel-scripts.com/"
+        ></link>
       </Head>
       <Analytics />
       <SpeedInsights />
@@ -43,9 +47,9 @@ export default function Layout({ children }) {
           },
         }}
       >
-        <main className="bg-lighterBg text-black px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
+        <div className="bg-lighterBg text-black px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
           {children}
-        </main>
+        </div>
         <BackToTop />
       </motion.div>
       <Footer />
