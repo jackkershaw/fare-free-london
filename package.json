@@ -4,7 +4,8 @@
   "license": "MIT",
   "author": "jones58",
   "description": "Fare Free London",
-  "homepage": "./",
+  "repository": "https://github.com/jones58/fare-free-london",
+  "homepage": "https://farefreelondon.org",
   "private": true,
   "scripts": {
     "dev": "next",
