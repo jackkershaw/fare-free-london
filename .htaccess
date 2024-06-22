@@ -1,0 +1,26 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Redirect all requests to Next.js
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.html [L,QSA]
+
+# Serve static assets directly if they exist
+RewriteCond %{REQUEST_URI} ^/static
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^static/(.*)$ /static/$1 [L,QSA]
+
+# Redirect for Next.js build
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Redirect all non-file requests to Next.js
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)$ index.html [L]
+</IfModule>
+
+# Set the default index file
+DirectoryIndex index.html
