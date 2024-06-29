@@ -12,7 +12,8 @@
 }
 
 .content a {
-  @apply no-underline;
+  @apply underline;
+  @apply underline-offset-2;
   @apply text-link;
   @apply hover:text-hover;
   @apply active:text-link;

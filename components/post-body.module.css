@@ -18,6 +18,8 @@
   @apply text-link;
   @apply hover:text-hover;
   @apply active:text-link;
+  @apply underline;
+  @apply underline-offset-2;
 }
 
 .content ul,
