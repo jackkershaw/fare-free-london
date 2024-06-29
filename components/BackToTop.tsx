@@ -30,9 +30,9 @@ const BackToTop: React.FC = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="rounded-full bg-link p-4 text-lighterBg shadow-lg hover:bg-hover focus:outline-none focus:ring-2 focus:ring-darkerBg focus:ring-opacity-50 active:bg-link"
+          className="rounded-full bg-link w-16 h-16 text-lighterBg shadow-lg hover:bg-hover focus:outline-none focus:ring-2 focus:ring-hover focus:ring-opacity-50 active:bg-link flex items-center justify-center"
         >
-          <span className="icon-[mdi--arrow-up] w-10 h-10 text-lighterBg"></span>
+          <span className="icon-[mdi--arrow-up] w-6 h-6 text-lighterBg"></span>
           <span className="sr-only">Back to top</span>
         </button>
       )}
