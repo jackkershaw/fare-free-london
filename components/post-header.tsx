@@ -1,8 +1,7 @@
 import CoverImage from "./cover-image";
 import PostTitle from "./post-title";
-import Link from "next/link";
 
-export default function PostHeader({ title, coverImage, category }) {
+export default function PostHeader({ title, coverImage }) {
   return (
     <div>
       <div className="lg:flex lg:flex-row lg:justify-center lg:pb-8">

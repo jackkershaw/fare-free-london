@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface Props {
   title: string;
+  altText?: string;
   coverImage: {
     node: {
       sourceUrl: string;
@@ -16,11 +17,12 @@ export default function CoverImage({
   title,
   coverImage,
   slug,
+  altText,
 }: Props) {
   const image = (
     <Image
       fill
-      alt={coverImage?.node.altText}
+      alt={altText}
       src={coverImage?.node.sourceUrl}
       className="object-cover object-center"
     />

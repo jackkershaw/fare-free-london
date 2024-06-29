@@ -11,9 +11,7 @@ export default function MoreStories({ posts }) {
             coverImage={node.featuredImage}
             slug={node.slug}
             excerpt={node.excerpt}
-            category={node.categories.edges.map(
-              (category) => category.node.name
-            )}
+            altText={node.featuredImage.node.altText}
           />
         ))}
       </div>
