@@ -39,3 +39,7 @@ Website for the Fare Free London Campaign
 - Used [NextJS docs](https://nextjs.org/docs/pages/building-your-application/configuring/debugging) for further debugging on both the server and client sides. In particular, the VScode debugging option was very useful.
   - Used this to add the priority property to the banner image, as it was identified as part of the LCP.
 - There was an issue with builds on Vercel where sometimes the whole site would end up blank (at least requiring a reload), and i'd have to redeploy. I fixed this by changing the details in the package.json as instructed in[this tutorial](https://www.youtube.com/watch?v=U89A0l6AM18). This didn't seem to fix it, so I used a generic .htaccess file to fix it instead.
+- The back to top button wasn't a circle, instead appearing as a circle so I fixed this by:
+  - Setting the width and height of the button to 16 to make it a circle.
+  - Used flex, items-center, and justify-center to center the icon inside the button.
+  - Setting the width and height of the icon to 6 to make it fit well within the button.
