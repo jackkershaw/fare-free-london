@@ -1331,8 +1331,8 @@ function getComponentTrace() {
 function formatTrace(trace) {
   const logs = [];
   trace.forEach((entry, i2) => {
-    logs.push(...(i2 === 0 ? [] : [`
-`]), ...formatTraceEntry(entry));
+    logs.push(...i2 === 0 ? [] : [`
+`], ...formatTraceEntry(entry));
   });
   return logs;
 }
@@ -6718,7 +6718,7 @@ function u$7(r2, n2, ...a2) {
     return typeof e2 == "function" ? e2(...a2) : e2;
   }
   let t2 = new Error(`Tried to handle "${r2}" but there is no handler defined. Only defined handlers are: ${Object.keys(n2).map((e2) => `"${e2}"`).join(", ")}.`);
-  throw (Error.captureStackTrace && Error.captureStackTrace(t2, u$7), t2);
+  throw Error.captureStackTrace && Error.captureStackTrace(t2, u$7), t2;
 }
 var i$5 = Object.defineProperty;
 var d$6 = (t2, e2, r2) => e2 in t2 ? i$5(t2, e2, { enumerable: true, configurable: true, writable: true, value: r2 }) : t2[e2] = r2;
@@ -6985,7 +6985,7 @@ var u$5 = ((e2) => (e2[e2.None = 1] = "None", e2[e2.Focusable = 2] = "Focusable"
 let f$2 = defineComponent({ name: "Hidden", props: { as: { type: [Object, String], default: "div" }, features: { type: Number, default: 1 } }, setup(t2, { slots: n2, attrs: i2 }) {
   return () => {
     var r2;
-    let { features: e2, ...d2 } = t2, o2 = { "aria-hidden": (e2 & 2) === 2 ? true : (r2 = d2["aria-hidden"]) != null ? r2 : void 0, hidden: (e2 & 4) === 4 ? true : void 0, style: { position: "fixed", top: 1, left: 1, width: 1, height: 0, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: "0", ...((e2 & 4) === 4 && (e2 & 2) !== 2 && { display: "none" }) } };
+    let { features: e2, ...d2 } = t2, o2 = { "aria-hidden": (e2 & 2) === 2 ? true : (r2 = d2["aria-hidden"]) != null ? r2 : void 0, hidden: (e2 & 4) === 4 ? true : void 0, style: { position: "fixed", top: 1, left: 1, width: 1, height: 0, padding: 0, margin: -1, overflow: "hidden", clip: "rect(0, 0, 0, 0)", whiteSpace: "nowrap", borderWidth: "0", ...(e2 & 4) === 4 && (e2 & 2) !== 2 && { display: "none" } } };
     return A$3({ ourProps: o2, theirProps: d2, slot: {}, attrs: i2, slots: n2, name: "Hidden" });
   };
 } });
@@ -7458,7 +7458,7 @@ function T$1(t2) {
   let i2 = inject$1(H$1, null);
   if (i2 === null) {
     let l2 = new Error(`<${t2} /> is missing a parent <Dialog /> component.`);
-    throw (Error.captureStackTrace && Error.captureStackTrace(l2, T$1), l2);
+    throw Error.captureStackTrace && Error.captureStackTrace(l2, T$1), l2;
   }
   return i2;
 }
@@ -7506,7 +7506,7 @@ let A$1 = "DC8F892D-2EBD-447C-A4C8-A03058436FF4", Ye = defineComponent({ name: "
   let ue2 = computed(() => !(U2.value || c2.value !== 0 || N2));
   return d$4(E2, ue2, (e2) => {
     var a2;
-    return { containers: [...((a2 = e2.containers) != null ? a2 : []), B2] };
+    return { containers: [...(a2 = e2.containers) != null ? a2 : [], B2] };
   }), watchEffect((e2) => {
     if (c2.value !== 0)
       return;
@@ -7575,7 +7575,7 @@ function U$2(d2) {
   let P2 = inject$1(re$1, null);
   if (P2 === null) {
     let s2 = new Error(`<${d2} /> is missing a parent <${ye$1.name} /> component.`);
-    throw (Error.captureStackTrace && Error.captureStackTrace(s2, U$2), s2);
+    throw Error.captureStackTrace && Error.captureStackTrace(s2, U$2), s2;
   }
   return P2;
 }
@@ -7833,7 +7833,7 @@ function C$1(a2) {
   let b3 = inject$1(U$1, null);
   if (b3 === null) {
     let s2 = new Error(`<${a2} /> is missing a parent <TabGroup /> component.`);
-    throw (Error.captureStackTrace && Error.captureStackTrace(s2, C$1), s2);
+    throw Error.captureStackTrace && Error.captureStackTrace(s2, C$1), s2;
   }
   return b3;
 }
@@ -8129,7 +8129,7 @@ let W$1 = N$4.RenderStrategy, he$1 = defineComponent({ props: { as: { type: [Obj
       te2(p2), I2.value = false;
     }, { immediate: true });
   }), provide(N$1, P2), t$4(computed(() => u$7(i2.value, { ["visible"]: i$2.Open, ["hidden"]: i$2.Closed }) | n2.value)), () => {
-    let { appear: o2, show: E2, enter: p2, enterFrom: V2, enterTo: Ce2, entered: ye2, leave: be2, leaveFrom: Ee, leaveTo: Ve, ...U2 } = e2, ne2 = { ref: d2 }, re2 = { ...U2, ...(A2.value && v2.value && c$4.isServer ? { class: normalizeClass([a2.class, U2.class, ...j2, ...M2]) } : {}) };
+    let { appear: o2, show: E2, enter: p2, enterFrom: V2, enterTo: Ce2, entered: ye2, leave: be2, leaveFrom: Ee, leaveTo: Ve, ...U2 } = e2, ne2 = { ref: d2 }, re2 = { ...U2, ...A2.value && v2.value && c$4.isServer ? { class: normalizeClass([a2.class, U2.class, ...j2, ...M2]) } : {} };
     return A$3({ theirProps: re2, ourProps: ne2, slot: {}, slots: s2, attrs: a2, features: W$1, visible: i2.value === "visible", name: "TransitionChild" });
   };
 } }), ce$1 = he$1, Se$1 = defineComponent({ inheritAttrs: false, props: { as: { type: [Object, String], default: "div" }, show: { type: [Boolean], default: null }, unmount: { type: [Boolean], default: true }, appear: { type: [Boolean], default: false }, enter: { type: [String], default: "" }, enterFrom: { type: [String], default: "" }, enterTo: { type: [String], default: "" }, entered: { type: [String], default: "" }, leave: { type: [String], default: "" }, leaveFrom: { type: [String], default: "" }, leaveTo: { type: [String], default: "" } }, emits: { beforeEnter: () => true, afterEnter: () => true, beforeLeave: () => true, afterLeave: () => true }, setup(e2, { emit: t2, attrs: a2, slots: s2 }) {
@@ -8445,7 +8445,7 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
         key: 0,
         disabled: !_ctx.canGoFirstOrPrev || _ctx.disabled,
         class: [_ctx.ui.base, _ctx.ui.rounded]
-      }, { ...(_ctx.ui.default.firstButton || {}), ..._ctx.firstButton }, {
+      }, { ..._ctx.ui.default.firstButton || {}, ..._ctx.firstButton }, {
         "aria-label": "First",
         onClick: _ctx.onClickFirst
       }), {
@@ -8460,7 +8460,7 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
         key: 0,
         disabled: !_ctx.canGoFirstOrPrev || _ctx.disabled,
         class: [_ctx.ui.base, _ctx.ui.rounded]
-      }, { ...(_ctx.ui.default.prevButton || {}), ..._ctx.prevButton }, {
+      }, { ..._ctx.ui.default.prevButton || {}, ..._ctx.prevButton }, {
         "aria-label": "Prev",
         onClick: _ctx.onClickPrev
       }), {
@@ -8475,7 +8475,7 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
         key: `${page2}-${index}`,
         disabled: _ctx.disabled,
         ref_for: true
-      }, page2 === _ctx.currentPage ? { ...(_ctx.ui.default.activeButton || {}), ..._ctx.activeButton } : { ...(_ctx.ui.default.inactiveButton || {}), ..._ctx.inactiveButton }, {
+      }, page2 === _ctx.currentPage ? { ..._ctx.ui.default.activeButton || {}, ..._ctx.activeButton } : { ..._ctx.ui.default.inactiveButton || {}, ..._ctx.inactiveButton }, {
         class: [{ "pointer-events-none": typeof page2 === "string", "z-[1]": page2 === _ctx.currentPage }, _ctx.ui.base, _ctx.ui.rounded],
         onClick: () => _ctx.onClickPage(page2)
       }), {
@@ -8490,7 +8490,7 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
         key: 0,
         disabled: !_ctx.canGoLastOrNext || _ctx.disabled,
         class: [_ctx.ui.base, _ctx.ui.rounded]
-      }, { ...(_ctx.ui.default.nextButton || {}), ..._ctx.nextButton }, {
+      }, { ..._ctx.ui.default.nextButton || {}, ..._ctx.nextButton }, {
         "aria-label": "Next",
         onClick: _ctx.onClickNext
       }), {
@@ -8505,7 +8505,7 @@ function _sfc_render$4(_ctx, _cache, $props, $setup, $data, $options) {
         key: 0,
         disabled: !_ctx.canGoLastOrNext || _ctx.disabled,
         class: [_ctx.ui.base, _ctx.ui.rounded]
-      }, { ...(_ctx.ui.default.lastButton || {}), ..._ctx.lastButton }, {
+      }, { ..._ctx.ui.default.lastButton || {}, ..._ctx.lastButton }, {
         "aria-label": "Last",
         onClick: _ctx.onClickLast
       }), {
@@ -10121,7 +10121,7 @@ const _sfc_main$w = defineComponent({
       const _component_audit_result_items_length = _sfc_main$x;
       const _component_tooltip = _sfc_main$z;
       return openBlock(), createElementBlock("div", {
-        class: normalizeClass([[`col-span-${_ctx.column.cols || "2"}`, ...(_ctx.column.classes ? _ctx.column.classes : [])], "flex items-center"])
+        class: normalizeClass([[`col-span-${_ctx.column.cols || "2"}`, ..._ctx.column.classes ? _ctx.column.classes : []], "flex items-center"])
       }, [
         renderSlot(_ctx.$slots, "default"),
         ((_a2 = unref(value)) == null ? void 0 : _a2.scoreDisplayMode) === "error" ? (openBlock(), createBlock(_component_audit_result, {
@@ -10827,14 +10827,14 @@ function combineCallbacks(combination, ...callbacks) {
     return async (ctx) => {
       const callback = callbacks[callbacks.length - 1];
       if (callback)
-        return { ...ctx, ...(await callback(ctx)) };
+        return { ...ctx, ...await callback(ctx) };
       return ctx;
     };
   } else {
     return async (ctx) => {
       for (const callback of callbacks) {
         if (callback)
-          ctx = { ...ctx, ...(await callback(ctx)) };
+          ctx = { ...ctx, ...await callback(ctx) };
       }
       return ctx;
     };
@@ -10866,8 +10866,8 @@ function createFetch$1(config2 = {}) {
           ...fetchOptions,
           ...args[0],
           headers: {
-            ...(headersToObject(fetchOptions.headers) || {}),
-            ...(headersToObject(args[0].headers) || {})
+            ...headersToObject(fetchOptions.headers) || {},
+            ...headersToObject(args[0].headers) || {}
           }
         };
       }
@@ -14527,7 +14527,7 @@ const resultColumns = computed(() => {
       cols: activeTab.value === 0 ? 3 : 1,
       component: activeTab.value === 0 ? _sfc_main$r : _sfc_main$q
     },
-    ...(activeTab.value > columns.length - 1 ? [] : columns[activeTab.value]),
+    ...activeTab.value > columns.length - 1 ? [] : columns[activeTab.value],
     {
       label: "Actions",
       cols: 1,
@@ -14877,7 +14877,7 @@ const _sfc_main$a = defineComponent({
       const _component_i_carbon_chevron_sort_down = __unplugin_components_4;
       const _component_i_carbon_chevron_sort_up = __unplugin_components_5;
       return openBlock(), createElementBlock("div", {
-        class: normalizeClass([[`col-span-${_ctx.column.cols || "2"}`, ...(_ctx.column.classes ? _ctx.column.classes : [])], "flex flex-col"])
+        class: normalizeClass([[`col-span-${_ctx.column.cols || "2"}`, ..._ctx.column.classes ? _ctx.column.classes : []], "flex flex-col"])
       }, [
         createBaseVNode("div", _hoisted_1$d, [
           _ctx.column.tooltip ? (openBlock(), createBlock(_component_tooltip, { key: 0 }, {
@@ -15414,7 +15414,7 @@ function I(t2) {
   if (!i2 || "object" != typeof i2)
     return i2;
   let n2, s2, e2;
-  for (s2 in (n2 = Array.isArray(i2) ? [] : {}, i2))
+  for (s2 in n2 = Array.isArray(i2) ? [] : {}, i2)
     i2.hasOwnProperty(s2) && (e2 = i2[s2], n2[s2] = e2 && "object" == typeof e2 ? I(e2) : e2);
   return n2;
 }
@@ -20979,10 +20979,10 @@ function Ys(t2, i2) {
   return void 0 !== i2.customValues && (t2.Ab = i2.customValues), t2;
 }
 function Xs(t2) {
-  return (i2, n2, s2, e2, r2, h2) => (function(t3, i3) {
+  return (i2, n2, s2, e2, r2, h2) => function(t3, i3) {
     return i3 ? i3(t3) : void 0 === (n3 = t3).open && void 0 === n3.value;
     var n3;
-  })(s2, h2) ? Ys({ ot: i2, se: n2, Cb: e2 }, s2) : Ys(t2(i2, n2, s2, e2, r2), s2);
+  }(s2, h2) ? Ys({ ot: i2, se: n2, Cb: e2 }, s2) : Ys(t2(i2, n2, s2, e2, r2), s2);
 }
 function Ks(t2) {
   return { Candlestick: Xs($s), Bar: Xs(Hs), Area: Xs(Ws), Baseline: Xs(js), Histogram: Xs(Fs), Line: Xs(Fs), Custom: Xs(Us) }[t2];
@@ -63869,14 +63869,14 @@ function mergeFetchOptions(input, defaults, Headers2 = globalThis.Headers) {
   };
   if ((defaults == null ? void 0 : defaults.params) && (input == null ? void 0 : input.params)) {
     merged.params = {
-      ...(defaults == null ? void 0 : defaults.params),
-      ...(input == null ? void 0 : input.params)
+      ...defaults == null ? void 0 : defaults.params,
+      ...input == null ? void 0 : input.params
     };
   }
   if ((defaults == null ? void 0 : defaults.query) && (input == null ? void 0 : input.query)) {
     merged.query = {
-      ...(defaults == null ? void 0 : defaults.query),
-      ...(input == null ? void 0 : input.query)
+      ...defaults == null ? void 0 : defaults.query,
+      ...input == null ? void 0 : input.query
     };
   }
   if ((defaults == null ? void 0 : defaults.headers) && (input == null ? void 0 : input.headers)) {
