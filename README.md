@@ -47,3 +47,5 @@ Website for the Fare Free London Campaign
   - Reccommended to make links not rely on just colour to be distinguishable, since link text that is discernible improves the experience for users with low vision. I added an underline with an offset of 2 to all links, except header and footer links which are more self explanatory and do not need to be distinguishable.
   - Told me to add titles to social share links. I also converted these to NextJS links to improve performance.
   - Unlighthouse showed me that alt text wasn't loading for images on the news page (post previews). I fixed this by passing the necessary alt text to the post preview and cover imagfe components.
+  - Said the front page was running slow - including LCP so I worked on lowering this with:
+    - Preload key resources (the image here) for fast loading

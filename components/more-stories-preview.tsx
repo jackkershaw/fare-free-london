@@ -6,18 +6,6 @@ export default function PostPreview({
   coverImage,
   excerpt,
   slug,
-  altText,
-}: {
-  title: string;
-  coverImage: {
-    node: {
-      sourceUrl: string;
-      altText: string;
-    };
-  };
-  excerpt: string;
-  slug: string;
-  altText: string;
 }) {
   let sentence: string = excerpt
     ? excerpt.split(/[.!?()]/)[0].trim()
@@ -31,7 +19,6 @@ export default function PostPreview({
             title={title}
             coverImage={coverImage}
             slug={slug}
-            altText={altText}
           />
         )}
         <h1 className="text-2xl text-link hover:text-hover capitalize">

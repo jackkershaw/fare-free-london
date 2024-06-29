@@ -10,20 +10,18 @@ interface Props {
     };
   };
   slug?: string;
-  altText: string;
 }
 
 export default function CoverImage({
   title,
   coverImage,
   slug,
-  altText,
 }: Props) {
   const image = (
     <Image
       fill
-      alt={altText}
-      src={coverImage?.node.sourceUrl}
+      alt={coverImage?.node?.altText}
+      src={coverImage?.node?.sourceUrl}
       className="object-cover object-center min-w-100 max-w-100 hover:scale-110 hover:scale-110 transition-transform duration-300 ease-in-out"
     />
   );

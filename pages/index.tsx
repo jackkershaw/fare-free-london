@@ -3,6 +3,7 @@ import { getFrontPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
 import styles from "./WordpressText.module.css";
 import Image from "next/image";
+import Head from "next/head";
 
 interface Props {
   content: string;
@@ -17,6 +18,13 @@ interface Props {
 export default function Index({ content, featuredImage }: Props) {
   return (
     <Layout>
+      <Head>
+        <link
+          rel="preload"
+          href={featuredImage.node.sourceUrl}
+          as="image"
+        />
+      </Head>
       <div className="grid grid-cols-1 lg:grid-cols-2">
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
@@ -27,9 +35,8 @@ export default function Index({ content, featuredImage }: Props) {
             height="980"
             src={featuredImage.node.sourceUrl}
             alt={featuredImage.node.altText}
-            fetchPriority="low"
             className="rounded-lg object-cover"
-          ></Image>
+          />
         </div>
       </div>
     </Layout>

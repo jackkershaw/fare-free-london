@@ -17,7 +17,6 @@ export default function News({ allPosts: { edges } }) {
               coverImage={node.featuredImage}
               slug={node.slug}
               excerpt={node.excerpt}
-              altText={node.featuredImage.node.altText}
             />
           ))}
         </div>

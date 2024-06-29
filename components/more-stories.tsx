@@ -11,7 +11,6 @@ export default function MoreStories({ posts }) {
             coverImage={node.featuredImage}
             slug={node.slug}
             excerpt={node.excerpt}
-            altText={node.featuredImage.node.altText}
           />
         ))}
       </div>
