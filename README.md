@@ -49,3 +49,53 @@ Website for the Fare Free London Campaign
   - Unlighthouse showed me that alt text wasn't loading for images on the news page (post previews). I fixed this by passing the necessary alt text to the post preview and cover imagfe components.
   - Said the front page was running slow - including LCP so I worked on lowering this with:
     - Preload key resources (the image here) for fast loading
+
+# Running on your machine
+
+## Run the Frontend (Next.js) in development mode:
+
+```bash
+npm install
+npm run dev
+```
+
+## How To Edit This Site in Wordpress
+
+(This is a copy of the text I sent to the client to help them edit the site)
+
+### Intro
+
+- The basic structure of the site is built in Wordpress - all the content for the articles and the pages is stored there.
+
+- On top of this, I've made a custom design for displaying the content well, making it interactive and including colours, fonts and animations. You can see this on farefreelondon.org What’s on here can’t be edited directly, but you can send me an email on jackkershaw@protonmail.com and I'll see what I can do. I plan to make a few edits to it Thursday onwards.
+
+### Editing the site
+
+- To edit the site, you’ll need to go to the following link: https://admin.farefreelondon.org/wp-admin/ and login with the credentials provided.
+
+- You’ll be greeted by a dashboard screen, which you can ignore. You need to find the “posts” section on the sidebar. Here, you can edit the articles which fill the latest news page.
+
+![a wordpress dashboard with posts written on it](image.png)
+
+From here it is very easy to create new posts, just click the “add new post” button and a dialog box will come up. Other than formatting, making a post is very easy and requires little in the way of designing content.
+
+![The add new post dialog in wordpress](image-1.png)
+
+- Add a title
+- Add content
+- Add an excerpt (this is one sentence about the article - can just be the first line from the article – which will be displayed on the news page). If more than one sentence is written, it will get clipped automatically to one sentence.
+- Add a featured image - this is the image that will show on the homepage, as well as at the top of the article. Landscape images work best here. Make sure to add alt text, for accessibility reasons. There’s a good guide [here](https://design102.blog.gov.uk/2022/01/14/whats-the-alternative-how-to-write-good-alt-text/).
+
+- Separate from the "posts" icon, you will find another called "pages". Inside this, you will find the frontpage, aims, and get involved pages.
+
+![pages dialog in wordpress dashboard](image-2.png)
+
+- Frontpage - This can be edited in a similar way to posts/articles, and has a featured image that can be changed. Changes are reflected on the main page: farefreelondon.org.
+
+- The same process goes for the get involved and aims pages - they are edited in the same way. For now, these have featured images but they won’t show up on the live site(I’ll work on editing this when I’m back from holiday).
+
+### Form Submissions
+
+These are set up to come through on Airtable, and can be accessed via the url.
+
+If you have any other questions about editing the site or getting form submissions, please feel free to email me on jackkershaw@protonmail.com.
