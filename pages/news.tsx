@@ -25,10 +25,8 @@ export default function News({ allPosts: { edges }, Categories }) {
               title={node.title}
               coverImage={node.featuredImage}
               slug={node.slug}
+              altText={node.featuredImage?.node.altText}
               excerpt={node.excerpt}
-              category={node.categories.nodes.map(
-                (category) => category.name
-              )}
             />
           ))}
         </div>
