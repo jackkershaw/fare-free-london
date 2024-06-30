@@ -43,6 +43,7 @@ Website for the Fare Free London Campaign
   - Setting the width and height of the button to 16 to make it a circle.
   - Used flex, items-center, and justify-center to center the icon inside the button.
   - Setting the width and height of the icon to 6 to make it fit well within the button.
+- Edited the Get Involved button in the footer to fit with the rest of the social icons in footer.
 - Ran unlighthouse on the site again.
   - Reccommended to make links not rely on just colour to be distinguishable, since link text that is discernible improves the experience for users with low vision. I added an underline with an offset of 2 to all links, except header and footer links which are more self explanatory and do not need to be distinguishable.
   - Told me to add titles to social share links. I also converted these to NextJS links to improve performance.
