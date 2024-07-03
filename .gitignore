@@ -2,9 +2,9 @@ todolist.md
 node_modules
 .env.local
 .vercel
-local-only/
-.next/
-.vscode/
+local-only
+.next
+.vscode
 .unlighthouse
 Invoice Template.docx
 .DS_Store
