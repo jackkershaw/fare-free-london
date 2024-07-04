@@ -76,11 +76,11 @@ npm run dev
 
 - You’ll be greeted by a dashboard screen, which you can ignore. You need to find the “posts” section on the sidebar. Here, you can edit the articles which fill the latest news page.
 
-![a wordpress dashboard with posts written on it](image.png)
+![a wordpress dashboard with posts written on it](images-for-readme/image.png)
 
 From here it is very easy to create new posts, just click the “add new post” button and a dialog box will come up. Other than formatting, making a post is very easy and requires little in the way of designing content.
 
-![The add new post dialog in wordpress](image-1.png)
+![The add new post dialog in wordpress](images-for-readme/image-1.png)
 
 - Add a title
 - Add content
@@ -89,7 +89,7 @@ From here it is very easy to create new posts, just click the “add new post”
 
 - Separate from the "posts" icon, you will find another called "pages". Inside this, you will find the frontpage, aims, and get involved pages.
 
-![pages dialog in wordpress dashboard](image-2.png)
+![pages dialog in wordpress dashboard](images-for-readme/image-2.png)
 
 - Frontpage - This can be edited in a similar way to posts/articles, and has a featured image that can be changed. Changes are reflected on the main page: farefreelondon.org.
 
