@@ -154,7 +154,6 @@ export default function GetInvolved() {
         onChange={handleChange}
         placeholder="Phone"
         className="w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-darkerBg"
-        required
       />
       <textarea
         name="message"
