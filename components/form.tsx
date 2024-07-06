@@ -25,10 +25,10 @@ export default function GetInvolved() {
   };
 
   const validatePhone = (phone: string) => {
-    const phoneRegex =
-      /^(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3}$/;
-    return phoneRegex.test(phone);
-  };
+  const phoneRegex =
+    /^(?:$|(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3})$/;
+  return phoneRegex.test(phone);
+};
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -154,7 +154,6 @@ export default function GetInvolved() {
         onChange={handleChange}
         placeholder="Phone"
         className="w-full rounded-md border border-gray-300 px-4 py-3 shadow-sm focus:outline-none focus:ring-2 focus:ring-darkerBg"
-        required
       />
       <textarea
         name="message"
