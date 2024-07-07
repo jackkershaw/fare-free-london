@@ -29,10 +29,11 @@ export default function Footer() {
             <a
               href="https://www.jackkershaw.net"
               target="_blank"
-              className="font-bold
+              className="font-bold"
+              rel="noopener noreferrer"
               text-link
               hover:text-hover
-              active:text-link"
+              active:text-link
               aria-label="link to Jack Kershaw's website"
             >
               Jack Kershaw.
@@ -43,6 +44,7 @@ export default function Footer() {
             <a
               href="https://github.com/jones58/fare-free-london"
               target="_blank"
+              rel="noopener noreferrer"
               className="font-bold text-link hover:text-hover active:text-link"
               aria-label="link to the Fare Free London GitHub repository"
             >

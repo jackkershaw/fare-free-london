@@ -31,6 +31,7 @@ export default function SocialIcons() {
       <a
         href="https://admin.farefreelondon.org/rss"
         target="_blank"
+        rel="noopener noreferrer"
         className="flex items-end justify-end"
         aria-label="link to the Fare Free London Magazine RSS feed"
       >
@@ -39,6 +40,7 @@ export default function SocialIcons() {
       <a
         aria-label="link to the Fare Free London email"
         href="mailto:info@farefreelondon.org"
+        rel="noopener noreferrer"
         target="_blank"
         className="flex items-end justify-end"
       >
