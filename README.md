@@ -52,6 +52,7 @@ Website for the Fare Free London Campaign
     - Preload key resources (the image here) for fast loading
     - Adding caching for static assets (favicon and fonts) to my next.config.js.
 - Added name to site webmanifest.
+- Added to Google Search Console to enable tracking of SEO performance.
 
 # Running on your machine
 

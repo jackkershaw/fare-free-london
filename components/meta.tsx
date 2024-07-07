@@ -3,6 +3,10 @@ import Head from "next/head";
 export default function Meta() {
   return (
     <Head>
+      <meta
+        name="google-site-verification"
+        content="NV55MkJVtFkcIEdf__HJ_cgUg0GWNaBu4ZxO5WKKyes"
+      />
       {/* Favicon */}
       <link
         rel="apple-touch-icon"
