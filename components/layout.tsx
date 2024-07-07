@@ -11,13 +11,6 @@ import BackToTop from "./BackToTop";
 export default function Layout({ children }) {
   return (
     <div>
-      <Head>
-        <title>{"Fare Free London"}</title>
-        <meta
-          name="description"
-          content={"Campaign for free public transport in London"}
-        />
-      </Head>
       <Analytics />
       <SpeedInsights />
       <Meta />
