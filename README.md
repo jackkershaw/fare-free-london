@@ -10,7 +10,7 @@ Website for the Fare Free London Campaign
 - Used [vital signs](https://www.vitalsignsmag.org/) as a base for getting going with the site. I decided I wanted to use NextJS with a Wordpress backend again and use [WPGraphQL](https://www.wpgraphql.com/) as the API.
 - finished figma sketches, decided fonts.
 
-## Building
+## Building
 
 - Edited Vital signs nextjs template.
 - Replace template fonts with P22 Underground for the body and headings.
@@ -24,6 +24,7 @@ Website for the Fare Free London Campaign
 - Added a sign up form to the site. Since I was on a tight deadline from the client, I used a similar approach to the form on my [Right to the City project](https://github.com/jones58/right-to-city).
 - Add back to top button, again taken from my [Right to the City project](https://github.com/jones58/right-to-city). I then edited the component as needed for this project.
 - Added get involved button to the footer to drive traffic to the get involved page. I put it here because I wanted people to see it after scrolling to bottom.
+- Added deploy hooks using Vercel and WP Webhooks - a Wordpress plugin. This means the site gets rebuilt when posts are created, updated or deleted on Wordpress. This provided a quick and easy way to trigger a site rebuild, without worrying about authentication or API routes.
 
 ## Debugging
 
