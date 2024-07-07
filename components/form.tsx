@@ -25,10 +25,10 @@ export default function GetInvolved() {
   };
 
   const validatePhone = (phone: string) => {
-  const phoneRegex =
-    /^(?:$|(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3})$/;
-  return phoneRegex.test(phone);
-};
+    const phoneRegex =
+      /^(?:$|(\+44\s?7\d{3}|\(?07\d{3}\)?)\s?\d{3}\s?\d{3})$/;
+    return phoneRegex.test(phone);
+  };
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -116,7 +116,7 @@ export default function GetInvolved() {
   return (
     <form
       onSubmit={handleSubmit}
-      className="space-y-6 rounded-lg bg-white p-8 text-black shadow-lg font-body"
+      className="space-y-6 rounded-lg bg-white p-8 text-black font-body"
     >
       <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
         <input
