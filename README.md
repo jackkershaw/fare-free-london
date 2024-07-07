@@ -50,6 +50,7 @@ Website for the Fare Free London Campaign
   - Unlighthouse showed me that alt text wasn't loading for images on the news page (post previews). I fixed this by passing the necessary alt text to the post preview and cover imagfe components.
   - Said the front page was running slow - including LCP so I worked on lowering this with:
     - Preload key resources (the image here) for fast loading
+    - Adding caching for static assets (favicon and fonts) to my next.config.js.
 
 # Running on your machine
 

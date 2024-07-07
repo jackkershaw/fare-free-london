@@ -21,4 +21,27 @@ module.exports = {
       },
     ],
   },
+  // Cache static assets
+  async headers() {
+    return [
+      {
+        source: "/favicon/:path*", // Cache all files in the /favicon directory
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000", // Cache for 1 year
+          },
+        ],
+      },
+      {
+        source: "/fonts/:path*", // Cache all files in the /fonts directory
+        headers: [
+          {
+            key: "Cache-Control",
+            value: "public, max-age=31536000", // Cache for 1 year
+          },
+        ],
+      },
+    ];
+  },
 };
