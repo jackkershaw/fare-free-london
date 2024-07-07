@@ -29,11 +29,10 @@ export default function Footer() {
             <a
               href="https://www.jackkershaw.net"
               target="_blank"
-              className="font-bold"
-              rel="noopener noreferrer"
-              text-link
+              className="font-bold text-link
               hover:text-hover
-              active:text-link
+              active:text-link"
+              rel="noopener noreferrer"
               aria-label="link to Jack Kershaw's website"
             >
               Jack Kershaw.
