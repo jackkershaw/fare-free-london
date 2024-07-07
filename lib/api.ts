@@ -74,6 +74,7 @@ export async function getAllPostsForHome(preview) {
             featuredImage {
               node {
                 sourceUrl
+                altText
               }
             }
           }
