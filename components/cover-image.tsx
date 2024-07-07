@@ -24,7 +24,7 @@ export default function CoverImage({
       fill
       alt={altText}
       src={coverImage?.node.sourceUrl}
-      className="object-cover object-center"
+      className="object-cover object-center rounded-lg"
     />
   );
   return (

@@ -22,11 +22,11 @@ export default function CoverImage({
       fill
       alt={coverImage?.node?.altText}
       src={coverImage?.node?.sourceUrl}
-      className="object-cover object-center min-w-100 max-w-100 hover:scale-110 hover:scale-110 transition-transform duration-300 ease-in-out"
+      className="object-cover object-center min-w-100 max-w-100 hover:scale-110 hover:scale-110 transition-transform duration-300 ease-in-out rounded-lg"
     />
   );
   return (
-    <div className="relative min-w-[30vw] min-h-[30vh] lg:min-w-[18vw] lg:min-h-[24vh] overflow-hidden">
+    <div className="relative min-w-[30vw] min-h-[30vh] lg:min-w-[18vw] lg:min-h-[24vh] overflow-hidden rounded-lg">
       {slug ? (
         <Link href={`/posts/${slug}`} aria-label={title}>
           {image}
