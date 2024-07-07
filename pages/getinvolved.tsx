@@ -19,7 +19,7 @@ const Events: React.FC<Props> = ({ content, featuredImage }) => {
   return (
     <Layout>
       <div>
-        <h1 className="font-sans text-2xl lg:text-4xl py-4">
+        <h1 className="font-sans text-2xl lg:text-4xl">
           Get Involved
         </h1>
         <div
