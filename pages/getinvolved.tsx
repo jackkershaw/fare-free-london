@@ -15,24 +15,33 @@ interface Props {
   };
 }
 
-export default function Events({ content, featuredImage }: Props) {
+const Events: React.FC<Props> = ({ content, featuredImage }) => {
   return (
-    <div>
-      <Layout>
-        <div>
-          <h1 className="font-sans text-2xl lg:text-4xl pb-5">
-            Get Involved
-          </h1>
-          <div
-            className={`font-serif text-lg prose ${styles.content}`}
-            dangerouslySetInnerHTML={{ __html: content }}
-          ></div>
+    <Layout>
+      <div>
+        <h1 className="font-sans text-2xl lg:text-4xl py-4">
+          Get Involved
+        </h1>
+        <div
+          className={`font-serif text-lg prose ${styles.content}`}
+          dangerouslySetInnerHTML={{ __html: content }}
+        />
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-10">
           <Form />
+          <div className="flex items-center justify-end">
+            <Image
+              width={1080}
+              height={980}
+              src={featuredImage.node.sourceUrl}
+              alt={featuredImage.node.altText}
+              className="rounded-lg object-cover object-center"
+            />
+          </div>
         </div>
-      </Layout>
-    </div>
+      </div>
+    </Layout>
   );
-}
+};
 
 export const getStaticProps: GetStaticProps = async () => {
   const data = await getEventsPageContent();
@@ -44,3 +53,5 @@ export const getStaticProps: GetStaticProps = async () => {
     revalidate: 10,
   };
 };
+
+export default Events;
