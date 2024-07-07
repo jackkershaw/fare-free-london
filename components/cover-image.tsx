@@ -10,7 +10,7 @@ interface Props {
 
 export default function CoverImage({
   title,
-  coverImage,
+  imageUrl,
   slug,
   altText,
 }: Props) {
@@ -18,7 +18,7 @@ export default function CoverImage({
     <Image
       fill
       alt={altText}
-      src={coverImage?.node.sourceUrl}
+      src={imageUrl}
       className="object-cover object-center rounded-lg"
     />
   );
