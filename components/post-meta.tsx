@@ -3,6 +3,8 @@ import Head from "next/head";
 export default function Meta() {
   return (
     <Head>
+      <link rel="canonical" href="https://farefreelondon.org" />
+
       <link
         rel="apple-touch-icon"
         sizes="180x180"

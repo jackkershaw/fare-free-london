@@ -11,6 +11,11 @@ export default function Meta() {
       <meta name="robots" content="index, follow" />
       <meta name="author" content="Fare Free London" />
       <meta
+        name="description"
+        content={"Campaign for free public transport in London"}
+      />
+      <link rel="canonical" href="https://farefreelondon.org" />
+      <meta
         name="google-site-verification"
         content="NV55MkJVtFkcIEdf__HJ_cgUg0GWNaBu4ZxO5WKKyes"
       />
@@ -38,15 +43,6 @@ export default function Meta() {
       {/* Theme color */}
       <meta name="theme-color" content="#000" />
       <meta name="msapplication-TileColor" content="#000000" />
-
-      {/* Description */}
-      <meta
-        name="description"
-        content="Campaign for free public transport in London"
-      />
-
-      {/* Title */}
-      <title>Fare Free London</title>
 
       {/* Twitter Meta Tags */}
       <meta name="twitter:card" content="summary_large_image" />

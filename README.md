@@ -58,6 +58,8 @@ Website for the Fare Free London Campaign
   - Adding title to main page.
   - verifying robots.txt
   - adding robots and author meta tags.
+  - added canonical tags
+- There was an issue where alt text wasn't showing for images on the news page (and the subpages: posts themselves). I tried several solutions, including tidying how props are passed to components, but in the end it was a case of editing the API so a query returned alt text for images on the news page.
 
 # Running on your machine
 
