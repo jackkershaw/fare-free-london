@@ -3,7 +3,8 @@ import Link from "next/link";
 
 export default function PostPreview({
   title,
-  coverImage,
+  imageUrl,
+  altText,
   excerpt,
   slug,
 }) {
@@ -14,10 +15,11 @@ export default function PostPreview({
   return (
     <div className="mb-6 lg:mb-0 bg-darkerBg bg-opacity-30 hover:bg-opacity-50 p-8 rounded-lg">
       <div className="flex flex-col space-y-2 lg:space-y-3">
-        {coverImage && (
+        {imageUrl && (
           <CoverImage
             title={title}
-            coverImage={coverImage}
+            imageUrl={imageUrl}
+            altText={altText}
             slug={slug}
           />
         )}
