@@ -82,7 +82,7 @@ export default function Header() {
         </div>
         {/* desktop menu */}
         <div className="hidden lg:flex flex-row lg:flex-col lg:justify-end">
-          <div className="space-x-10 space-y-8 lg:space-y-0 lg:items-center justify-end w-full flex flex-col lg:flex-row z-50 bg-darkerBg">
+          <div className="justify-end space-x-12 w-full flex flex-col lg:flex-row z-50 bg-darkerBg">
             <div className="flex flex-row items-center space-x-10 text-3xl font-sans font-bold pb-6">
               <Link
                 href="/aims"
