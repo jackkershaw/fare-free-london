@@ -51,6 +51,7 @@ Website for the Fare Free London Campaign
   - Said the front page was running slow - including LCP so I worked on lowering this with:
     - Preload key resources (the image here) for fast loading
     - Adding caching for static assets (favicon and fonts) to my next.config.js.
+- Added name to site webmanifest.
 
 # Running on your machine
 
