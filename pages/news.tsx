@@ -14,7 +14,8 @@ export default function News({ allPosts: { edges } }) {
             <PostPreview
               key={node.slug}
               title={node.title}
-              coverImage={node.featuredImage}
+              imageUrl={node.featuredImage.node.sourceUrl}
+              altText={node.featuredImage.node.altText}
               slug={node.slug}
               excerpt={node.excerpt}
             />
