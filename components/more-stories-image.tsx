@@ -3,25 +3,22 @@ import Link from "next/link";
 
 interface Props {
   title: string;
-  coverImage: {
-    node: {
-      sourceUrl: string;
-      altText: string;
-    };
-  };
+  imageUrl: string;
+  altText?: string;
   slug?: string;
 }
 
 export default function CoverImage({
   title,
-  coverImage,
+  imageUrl,
   slug,
+  altText,
 }: Props) {
   const image = (
     <Image
       fill
-      alt={coverImage?.node?.altText}
-      src={coverImage?.node?.sourceUrl}
+      alt={altText}
+      src={imageUrl}
       className="object-cover object-center min-w-100 max-w-100 hover:scale-110 hover:scale-110 transition-transform duration-300 ease-in-out rounded-lg"
     />
   );

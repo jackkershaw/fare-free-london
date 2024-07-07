@@ -3,13 +3,8 @@ import Link from "next/link";
 
 interface Props {
   title: string;
+  imageUrl: string;
   altText?: string;
-  coverImage: {
-    node: {
-      sourceUrl: string;
-      altText: string;
-    };
-  };
   slug?: string;
 }
 
