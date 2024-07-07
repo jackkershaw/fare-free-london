@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Footer() {
   return (
     <footer className="bg-darkerBg w-full">
-      <div className="p-5 lg:pb-12 lg:mx-10 font-serif justify-between space-y-10 lg:space-y-0 flex flex-col lg:flex-row lg:items-end">
+      <div className="p-5 lg:pb-12 lg:mx-10 lg:px-10 font-serif justify-between space-y-10 lg:space-y-0 flex flex-col lg:flex-row lg:items-end">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <Link
             href="/getinvolved"
