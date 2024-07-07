@@ -53,6 +53,11 @@ Website for the Fare Free London Campaign
     - Adding caching for static assets (favicon and fonts) to my next.config.js.
 - Added name to site webmanifest.
 - Added to Google Search Console to enable tracking of SEO performance.
+- Improved SEO with:
+  - Keywords in meta tags
+  - Adding title to main page.
+  - verifying robots.txt
+  - adding robots and author meta tags.
 
 # Running on your machine
 

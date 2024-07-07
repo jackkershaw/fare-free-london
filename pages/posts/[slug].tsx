@@ -38,6 +38,17 @@ export default function Post({ post, posts }) {
         <>
           <article>
             <Head>
+              <meta
+                name="google-site-verification"
+                content="NV55MkJVtFkcIEdf__HJ_cgUg0GWNaBu4ZxO5WKKyes"
+              />
+              <meta
+                name="keywords"
+                content="free, public, transport, London, tube, train, bus, metro, rail, car, taxi, public transport, fare-free transit, public transport equality, sustainable transport, climate action, social justice, environmental benefits, low-income support, air pollution reduction, Greater London Authority, free transit benefits, public service transport, TFL, Transport for London, Free London, Free things to do in London, London cost of living, Sadiq Khan"
+              />
+
+              <meta name="robots" content="index, follow" />
+              <meta name="author" content="Fare Free London" />
               <title>{`${post.title} | Fare Free London`}</title>
               <meta
                 property="og:image"
