@@ -1,6 +1,6 @@
 export default function SocialIcons() {
   return (
-    <div className="flex flex-row lg:items-end justify-between space-x-5 lg:space-x-10 pb-4 pt-8 lg:pt-0 lg:pb-0 text-3xl">
+    <div className="flex flex-row lg:items-end justify-between space-x-5 lg:space-x-10 text-3xl">
       <a
         href="https://x.com/FareFreeLondon"
         target="_blank"
