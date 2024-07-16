@@ -3,7 +3,7 @@ import Image from "next/image";
 import Head from "next/head";
 import { getAboutPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
-import styles from "./Aims.module.css";
+import styles from "./AimsPage.module.css";
 
 interface Props {
   content: string;
