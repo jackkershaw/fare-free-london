@@ -11,14 +11,22 @@
 .gridItem {
   @apply lg:p-0;
 }
+
 .gridItem div {
-  @apply lg:flex lg:flex-col lg:justify-between lg:h-[1150px] my-10;
+  @apply lg:flex lg:flex-col lg:justify-between lg:h-[1200px] my-10;
 }
 
 .content iframe {
   @apply block mx-auto lg:mx-5 w-[245px] h-[420px] rounded-lg my-10 bg-black;
   border: 10px solid #eb5a4a;
   box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
+}
+
+.blankSpace {
+  width: 245px;
+  height: 420px;
+  margin: 10px auto;
+  background-color: transparent;
 }
 
 .content p,

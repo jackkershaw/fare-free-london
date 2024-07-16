@@ -8,11 +8,19 @@ interface Props {
 }
 
 const splitContentIntoGridItems = (content: string) => {
-  const sections = content.split(/(?=<h2)/gi).map((section, index) => (
-    <div key={index} className={styles.gridItem}>
-      <div dangerouslySetInnerHTML={{ __html: section }} />
-    </div>
-  ));
+  const sections = content.split(/(?=<h2)/gi).map((section, index) => {
+    // Check if the section contains an iframe
+    const containsIframe = section.includes("<iframe");
+    // If no iframe, add a blank space div
+    const sectionContent = containsIframe
+      ? section
+      : `${section}<div class="${styles.blankSpace}"></div>`;
+    return (
+      <div key={index} className={styles.gridItem}>
+        <div dangerouslySetInnerHTML={{ __html: sectionContent }} />
+      </div>
+    );
+  });
   return sections;
 };
 
