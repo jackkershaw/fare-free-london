@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import { getSupportersPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
-import styles from "./supporters.module.css";
+import styles from "./Supporters.module.css";
 
 interface Props {
   content: string;
