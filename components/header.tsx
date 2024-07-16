@@ -58,15 +58,23 @@ export default function Header() {
                   aria-label="link to the aims page"
                   onClick={closeMenu}
                 >
-                  Our Aims
+                  Aims
                 </Link>
                 <Link
-                  href="/news?category="
+                  href="/news"
                   className="text-link hover:text-hover active:text-link"
                   aria-label="link to the news page"
                   onClick={closeMenu}
                 >
-                  Latest News
+                  News
+                </Link>
+                <Link
+                  href="/supporters"
+                  className="text-link hover:text-hover active:text-link"
+                  aria-label="link to the supporters page"
+                  onClick={closeMenu}
+                >
+                  Supporters
                 </Link>
                 <Link
                   href="/getinvolved"
@@ -89,16 +97,23 @@ export default function Header() {
                 className="text-link hover:text-hover active:text-link"
                 aria-label="link to the aims page"
               >
-                Our Aims
+                Aims
               </Link>
               <Link
                 href="/news"
                 className="text-link hover:text-hover active:text-link"
                 aria-label="link to the news page"
               >
-                Latest News
+                News
               </Link>
-
+              <Link
+                href="/supporters"
+                className="text-link hover:text-hover active:text-link"
+                aria-label="link to the supporters page"
+                onClick={closeMenu}
+              >
+                Supporters
+              </Link>
               <Link
                 href="/getinvolved"
                 className="text-link hover:text-hover active:text-link"
