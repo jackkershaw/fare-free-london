@@ -2,7 +2,7 @@
   @apply prose;
 }
 .content iframe {
-  @apply mx-auto w-[240px] h-[426px] rounded-lg my-10;
+  @apply mx-auto w-[240px] h-[426px] rounded-lg my-10 bg-black;
   border: 10px solid #eb5a4a;
   box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
 }
