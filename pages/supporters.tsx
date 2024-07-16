@@ -20,6 +20,7 @@ export default function Supporters({ content }: Props) {
   return (
     <div>
       <Layout>
+        <h1 className="text-4xl">Supporters</h1>
         <div className={styles.content}>
           {splitContentIntoGridItems(content)}
         </div>

@@ -9,10 +9,10 @@
 }
 
 .gridItem {
-  @apply lg:p-4;
+  @apply lg:p-0;
 }
 .gridItem div {
-  @apply lg:flex lg:flex-col;
+  @apply lg:flex lg:flex-col lg:justify-between lg:h-[1150px] my-10;
 }
 
 .content iframe {
