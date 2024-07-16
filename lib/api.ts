@@ -244,6 +244,23 @@ export async function getAboutPageContent(aboutPageSlug = "about") {
   return { content, featuredImage };
 }
 
+export async function getSupportersPageContent(
+  supportersPageSlug = "supporters"
+) {
+  const data = await fetchAPI(`
+  query getAboutPageContent {
+    pages(where: {name: "supporters"}) {
+      nodes {
+        content
+
+      }
+    }
+  }
+      `);
+  const content = data?.pages?.nodes[0]?.content || "";
+  return { content };
+}
+
 export async function getEventsPageContent(eventsPageSlug = "events") {
   const data = await fetchAPI(`
   query getAboutPageContent {
