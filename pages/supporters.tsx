@@ -7,14 +7,21 @@ interface Props {
   content: string;
 }
 
+const splitContentIntoGridItems = (content: string) => {
+  const sections = content.split(/(?=<h2)/gi).map((section, index) => (
+    <div key={index} className={styles.gridItem}>
+      <div dangerouslySetInnerHTML={{ __html: section }} />
+    </div>
+  ));
+  return sections;
+};
+
 export default function Supporters({ content }: Props) {
   return (
     <div>
       <Layout>
-        <div>
-          <div className={`${styles.content}`}>
-            <div dangerouslySetInnerHTML={{ __html: content }}></div>
-          </div>
+        <div className={styles.content}>
+          {splitContentIntoGridItems(content)}
         </div>
       </Layout>
     </div>

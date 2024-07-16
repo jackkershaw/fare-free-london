@@ -1,8 +1,22 @@
 .content {
-  @apply prose;
+  @apply prose lg:grid lg:gap-8 lg:grid-cols-4;
 }
+
+@media (min-width: 1024px) {
+  .content {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.gridItem {
+  @apply lg:p-4;
+}
+.gridItem div {
+  @apply lg:flex lg:flex-col;
+}
+
 .content iframe {
-  @apply mx-auto w-[240px] h-[426px] rounded-lg my-10 bg-black;
+  @apply block mx-auto lg:mx-5 w-[245px] h-[420px] rounded-lg my-10 bg-black;
   border: 10px solid #eb5a4a;
   box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
 }
@@ -11,17 +25,11 @@
 .content ul,
 .content ol,
 .content blockquote {
-  @apply font-serif;
-  @apply prose-xl;
-  @apply leading-normal;
+  @apply font-serif prose-xl leading-normal text-center lg:text-left;
 }
 
 .content a {
-  @apply underline;
-  @apply underline-offset-2;
-  @apply text-link;
-  @apply hover:text-hover;
-  @apply active:text-link;
+  @apply underline underline-offset-2 text-link hover:text-hover active:text-link;
 }
 
 .content ul,
@@ -49,16 +57,17 @@
 .content h1 {
   @apply text-center lg:text-left;
 }
+
 .content h2 {
-  @apply text-3xl mt-12 mb-4  text-center lg:text-left;
+  @apply text-3xl mt-12 mb-4 text-center lg:text-left;
 }
 
 .content h3 {
-  @apply text-2xl mt-8 mb-4  text-center lg:text-left;
+  @apply text-2xl mt-8 mb-4 lg:text-left;
 }
 
 .content h4 {
-  @apply text-xl mt-6 mb-4  text-center lg:text-left;
+  @apply text-xl mt-6 mb-4 lg:text-left;
 }
 
 .content pre {
