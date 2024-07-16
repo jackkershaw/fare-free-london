@@ -7,8 +7,4 @@ local-only
 .vscode
 .unlighthouse
 .DS_Store
-.DS_Store
-pages/.DS_Store
-planning/.DS_Store
-planning/inspo/.DS_Store
-public/.DS_Store
+.unlighthouse/localhost/465e/assets/payload.js
