@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import { getSupportersPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
-import styles from "./WordpressText.module.css";
+import styles from "./supporters.module.css";
 
 interface Props {
   content: string;
