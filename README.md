@@ -67,7 +67,6 @@ Website for the Fare Free London Campaign
 - A member of the public (thanks ruthkonyn!) added [an issue](https://github.com/jones58/fare-free-london/issues/1) to this repository (since the github url is on the site), which I fixed by centring the text on the aims page for better readability on desktop.
 - Added colours for subheadings (dark blue)
 - Lazy loaded animations on the site using [lazymotion](https://www.framer.com/motion/lazy-motion/) to add better performance.
-- Removed unused npm packages, using `npm ls --depth=0` to list them and then npm uninstall to remove them.
 
 # Running on your machine
 
