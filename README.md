@@ -30,12 +30,14 @@ Website for the Fare Free London Campaign
 
 - I noticed there was a bug in the mobile menu, where clicking on a link for a page you're already on didn't make it go away - I fixed this by adding an onClick event handler to each link to set the menuOpen state to false.
 - Some users were reporting slow loading times. I used unlighthouse to check the speed of the site.
+
   - Switched to the next/image component to set the appropriate sizes.
   - Switched footer image to low priority
   - Preconnect to va.vercel-scripts.com to speed up the site.
-  - NextJS recommends optional 'sharp' package for image optimisation, so I installed it.
-    Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
-  - All these things improved LCP from 11.3s to 2.8s, bringing Performance score up from 67 to 96.
+  - NextJS recommends optional 'sharp' package for image optimisation, so I installed it. Read more: https://nextjs.org/docs/messages/sharp-missing-in-production
+  - Used Dynamic imports to lazy load components at the bottom of my page and improve performance from 75 to 95 in Lighthouse.
+  - All these things improved LCP from 11.3s to 2.8s, bringing Performance score up from 67 to 96 in Lighthouse.
+
 - NextJS told me there was an issue with using a legacy prop, "layout", on images so i changed this, to use width and height with object-cover instead.
 - Used [NextJS docs](https://nextjs.org/docs/pages/building-your-application/configuring/debugging) for further debugging on both the server and client sides. In particular, the VScode debugging option was very useful.
   - Used this to add the priority property to the banner image, as it was identified as part of the LCP.
@@ -65,7 +67,6 @@ Website for the Fare Free London Campaign
 - A member of the public (thanks ruthkonyn!) added [an issue](https://github.com/jones58/fare-free-london/issues/1) to this repository (since the github url is on the site), which I fixed by centring the text on the aims page for better readability on desktop.
 - Added colours for subheadings (dark blue)
 - Disabled animations on the site using lazymotion to lazy load them based on the DOM.
-- Used Dynamic imports to lazy load components at the bottom of my page and improve performance from 75 to 95 in Lighthouse.
 
 # Running on your machine
 
