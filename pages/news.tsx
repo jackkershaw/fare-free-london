@@ -1,7 +1,14 @@
 import Layout from "../components/layout";
 import { getAllPostsForHome, getCategories } from "../lib/api";
-import PostPreview from "../components/more-stories-preview";
 import { GetStaticProps } from "next";
+import dynamic from "next/dynamic";
+
+const PostPreview = dynamic(
+  () => import("../components/more-stories-preview"),
+  {
+    ssr: false,
+  }
+);
 
 export default function News({ allPosts: { edges } }) {
   const Posts = edges;
