@@ -65,6 +65,7 @@ Website for the Fare Free London Campaign
 - A member of the public (thanks ruthkonyn!) added [an issue](https://github.com/jones58/fare-free-london/issues/1) to this repository (since the github url is on the site), which I fixed by centring the text on the aims page for better readability on desktop.
 - Added colours for subheadings (dark blue)
 - Disabled animations on the site using lazymotion to lazy load them based on the DOM.
+- Used Dynamic imports to lazy load components at the bottom of my page and improve performance from 75 to 95 in Lighthouse.
 
 # Running on your machine
 

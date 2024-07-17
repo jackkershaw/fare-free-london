@@ -1,12 +1,21 @@
 import Header from "./header";
-import Footer from "./footer";
 import Meta from "./meta";
-import Head from "next/head";
 import { motion, LazyMotion, domAnimation } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import TubeLines from "./tubelines";
-import BackToTop from "./back-to-top";
+import dynamic from "next/dynamic";
+
+const BackToTop = dynamic(() => import("./back-to-top"), {
+  ssr: false,
+});
+
+const TubeLines = dynamic(() => import("./tubelines"), {
+  ssr: false,
+});
+
+const Footer = dynamic(() => import("./footer"), {
+  ssr: false,
+});
 
 export default function Layout({ children }) {
   return (
