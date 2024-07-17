@@ -18,10 +18,8 @@ interface Props {
 const Events: React.FC<Props> = ({ content, featuredImage }) => {
   return (
     <Layout>
+      <h1 className="text-4xl">Supporters</h1>
       <div className="w-full">
-        <h1 className="font-sans text-2xl lg:text-4xl">
-          Get Involved
-        </h1>
         <div
           className={`font-serif text-lg prose ${styles.content}`}
           dangerouslySetInnerHTML={{ __html: content }}

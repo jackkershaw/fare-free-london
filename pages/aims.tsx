@@ -26,18 +26,19 @@ export default function About({ content, featuredImage }: Props) {
             as="image"
           />
         </Head>
-        <div className="grid grid-cols-1 lg:grid-cols-2">
-          <div className={`${styles.content}`}>
-            <div dangerouslySetInnerHTML={{ __html: content }}></div>
-          </div>
-          <div>
+        <div>
+          <h1 className="text-4xl">Aims</h1>
+          <div className="w-[30vw] h-auto mx-auto">
             <Image
               width="1080"
               height="980"
               src={featuredImage.node.sourceUrl}
               alt={featuredImage.node.altText}
-              className="rounded-lg object-cover"
+              className="rounded-lg object-cover lg:mx-auto"
             />
+          </div>
+          <div className={`${styles.content}`}>
+            <div dangerouslySetInnerHTML={{ __html: content }}></div>
           </div>
         </div>
       </Layout>
