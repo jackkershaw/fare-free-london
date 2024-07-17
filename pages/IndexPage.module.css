@@ -1,5 +1,5 @@
 .content {
-  @apply prose lg:w-full lg:mx-auto;
+  @apply prose;
 }
 
 .content p,
@@ -41,6 +41,9 @@
   list-style: circle;
 }
 
+.content h1 {
+  @apply text-4xl;
+}
 .content h2 {
   @apply text-3xl mt-12 mb-4 text-subHeading;
 }

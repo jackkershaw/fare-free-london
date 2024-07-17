@@ -67,7 +67,7 @@
 }
 
 .content h2 {
-  @apply text-3xl mt-12 mb-4 text-center lg:text-left;
+  @apply text-3xl mt-12 mb-4 text-center lg:text-left text-subHeading;
 }
 
 .content h3 {

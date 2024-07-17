@@ -12,7 +12,7 @@ module.exports = {
         darkerBg: "#f3efe4",
         link: "#4760a5",
         hover: "#eB5a4a",
-        subHeading: "#696969",
+        subHeading: "#4761a5",
         blackText: "#000000",
         lighterBg: "#f5f4f0",
         black: "#322e2f",

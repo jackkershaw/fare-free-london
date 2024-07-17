@@ -1,7 +1,7 @@
 import Layout from "../components/layout";
 import { getFrontPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
-import styles from "./WordpressText.module.css";
+import styles from "./IndexPage.module.css";
 import Image from "next/image";
 import Head from "next/head";
 
