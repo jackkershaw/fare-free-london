@@ -1,6 +1,6 @@
 import Header from "./header";
 import Meta from "./meta";
-import { motion, LazyMotion, domAnimation } from "framer-motion";
+import { m, LazyMotion, domAnimation } from "framer-motion";
 import dynamic from "next/dynamic";
 
 const BackToTop = dynamic(() => import("./back-to-top"), {
@@ -21,7 +21,7 @@ export default function Layout({ children }) {
       <Meta />
       <Header />
       <LazyMotion features={domAnimation}>
-        <motion.div
+        <m.div
           initial="pageInitial"
           animate="pageAnimate"
           variants={{
@@ -46,7 +46,7 @@ export default function Layout({ children }) {
             {children}
           </div>
           <BackToTop />
-        </motion.div>
+        </m.div>
       </LazyMotion>
       <Footer />
       <TubeLines />
