@@ -66,7 +66,8 @@ Website for the Fare Free London Campaign
 - On the Supporters page, I had some issues with getting the layout right on desktop. I realised that the content could be split into divs by h2, so I processed the content into separate divs by the h2 element.
 - A member of the public (thanks ruthkonyn!) added [an issue](https://github.com/jones58/fare-free-london/issues/1) to this repository (since the github url is on the site), which I fixed by centring the text on the aims page for better readability on desktop.
 - Added colours for subheadings (dark blue)
-- Disabled animations on the site using lazymotion to lazy load them based on the DOM.
+- Lazy loaded animations on the site using [lazymotion](https://www.framer.com/motion/lazy-motion/) to add better performance.
+- Removed unused npm packages, using `npm ls --depth=0` to list them and then npm uninstall to remove them.
 
 # Running on your machine
 
