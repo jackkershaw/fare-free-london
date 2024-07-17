@@ -13,7 +13,7 @@
 }
 
 .gridItem div {
-  @apply lg:flex lg:flex-col lg:h-[1200px];
+  @apply lg:flex lg:flex-col;
 }
 
 .content iframe {
