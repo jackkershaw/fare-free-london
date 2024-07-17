@@ -1,5 +1,5 @@
 .content {
-  @apply prose;
+  @apply prose lg:w-full lg:mx-auto;
 }
 
 .content p,
