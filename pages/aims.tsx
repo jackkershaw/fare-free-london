@@ -1,6 +1,5 @@
 import Layout from "../components/layout";
 import Image from "next/image";
-import Head from "next/head";
 import { getAboutPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
 import styles from "./AimsPage.module.css";
@@ -19,13 +18,6 @@ export default function About({ content, featuredImage }: Props) {
   return (
     <div>
       <Layout>
-        <Head>
-          <link
-            rel="preload"
-            href={featuredImage.node.sourceUrl}
-            as="image"
-          />
-        </Head>
         <div>
           <h1 className="text-4xl text-center lg:text-left">Aims</h1>
           <div className="pt-4 lg:w-[40vw] lg:h-auto lg:mx-auto">
@@ -35,6 +27,7 @@ export default function About({ content, featuredImage }: Props) {
               src={featuredImage.node.sourceUrl}
               alt={featuredImage.node.altText}
               className="rounded-lg object-cover lg:mx-auto"
+              priority
             />
           </div>
           <div className={`${styles.content}`}>
