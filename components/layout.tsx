@@ -1,8 +1,6 @@
 import Header from "./header";
 import Meta from "./meta";
 import { motion, LazyMotion, domAnimation } from "framer-motion";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import dynamic from "next/dynamic";
 
 const BackToTop = dynamic(() => import("./back-to-top"), {
@@ -20,8 +18,6 @@ const Footer = dynamic(() => import("./footer"), {
 export default function Layout({ children }) {
   return (
     <div>
-      <Analytics />
-      <SpeedInsights />
       <Meta />
       <Header />
       <LazyMotion features={domAnimation}>
