@@ -8,3 +8,6 @@ local-only
 .unlighthouse
 .DS_Store
 .unlighthouse/localhost/465e/assets/payload.js
+
+# Million Lint
+.million
