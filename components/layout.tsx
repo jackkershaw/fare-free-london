@@ -6,7 +6,7 @@ import { motion, LazyMotion, domAnimation } from "framer-motion";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import TubeLines from "./tubelines";
-import BackToTop from "./BackToTop";
+import BackToTop from "./back-to-top";
 
 export default function Layout({ children }) {
   return (
