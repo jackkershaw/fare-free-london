@@ -28,7 +28,7 @@ export default function About({ content, featuredImage }: Props) {
         </Head>
         <div>
           <h1 className="text-4xl">Aims</h1>
-          <div className="w-[30vw] h-auto mx-auto">
+          <div className="pt-4 lg:w-[40vw] lg:h-auto lg:mx-auto">
             <Image
               width="1080"
               height="980"
