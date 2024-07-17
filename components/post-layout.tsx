@@ -2,8 +2,7 @@ import Header from "./header";
 import Footer from "./footer";
 import Head from "next/head";
 import { motion } from "framer-motion";
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
+
 export default function Layout({ children }) {
   return (
     <div>
@@ -14,8 +13,6 @@ export default function Layout({ children }) {
           content={"Campaign for free public transport in London"}
         />
       </Head>
-      <Analytics />
-      <SpeedInsights />
       <Header />
       <motion.div
         initial="pageInitial"
