@@ -67,6 +67,7 @@ Website for the Fare Free London Campaign
 - A member of the public (thanks ruthkonyn!) added [an issue](https://github.com/jones58/fare-free-london/issues/1) to this repository (since the github url is on the site), which I fixed by centring the text on the aims page for better readability on desktop.
 - Added colours for subheadings (dark blue)
 - Lazy loaded animations on the site using [lazymotion](https://www.framer.com/motion/lazy-motion/) to add better performance.
+- I realised there was an error where I exposed the API key on posting data to Airtable. I fixed this by wrapping the post request in an async function running on the server-side, rather than on the client-side.
 
 # Running on your machine
 
