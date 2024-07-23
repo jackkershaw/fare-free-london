@@ -1,5 +1,4 @@
 import { useState, ChangeEvent, FormEvent } from "react";
-import axios from "axios";
 import Swal from "sweetalert2";
 
 interface FormData {
@@ -66,30 +65,25 @@ export default function GetInvolved() {
     }
 
     try {
-      const response = await axios.post(
-        "https://api.airtable.com/v0/appIEhVJVYhaRDs6J/tbl08GRrX1G1yPz8t",
-        {
-          records: [
-            {
-              fields: {
-                fname: formData.fname,
-                lname: formData.lname,
-                email: formData.email,
-                phone: formData.phone,
-                message: formData.message,
-              },
-            },
-          ],
+      const response = await fetch("/api/airtable", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
         },
-        {
-          headers: {
-            Authorization: `Bearer ${process.env.NEXT_PUBLIC_AIRTABLE_API_KEY}`,
-            "Content-Type": "application/json",
+        body: JSON.stringify({
+          data: {
+            fname: formData.fname,
+            lname: formData.lname,
+            email: formData.email,
+            phone: formData.phone,
+            message: formData.message,
           },
-        }
-      );
+        }),
+      });
 
-      if (response.status === 200) {
+      const result = await response.json();
+
+      if (response.ok) {
         Swal.fire({
           icon: "success",
           title: "Success",
@@ -102,13 +96,17 @@ export default function GetInvolved() {
           phone: "",
           message: "",
         });
+      } else {
+        throw new Error(result.error || "An error occurred");
       }
     } catch (error) {
       console.error("Error submitting form:", error);
       Swal.fire({
         icon: "error",
         title: "Submission Failed",
-        text: "An error occurred while submitting the form. Please try again.",
+        text:
+          error.message ||
+          "An error occurred while submitting the form. Please try again.",
       });
     }
   };
