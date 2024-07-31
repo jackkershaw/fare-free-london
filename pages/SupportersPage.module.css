@@ -40,6 +40,10 @@
   @apply underline underline-offset-2 text-link hover:text-hover active:text-link;
 }
 
+.readMoreButton {
+  @apply underline underline-offset-2 text-link hover:text-hover active:text-link prose-xl text-center  lg:text-left;
+}
+
 .content ul,
 .content ol {
   @apply pl-4;

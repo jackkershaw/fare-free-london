@@ -33,7 +33,10 @@ const splitContentIntoGridItems = (
           }}
         />
         {shouldTruncate && !isExpanded && (
-          <a onClick={handleReadMore} className={styles.content}>
+          <a
+            onClick={handleReadMore}
+            className={styles.readMoreButton}
+          >
             Read more
           </a>
         )}
