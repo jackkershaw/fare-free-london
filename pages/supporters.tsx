@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Layout from "../components/layout";
 import { getSupportersPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
@@ -7,11 +8,35 @@ interface Props {
   content: string;
 }
 
-const splitContentIntoGridItems = (content: string) => {
+const splitContentIntoGridItems = (
+  content: string,
+  expandedSections,
+  setExpandedSections
+) => {
   const sections = content.split(/(?=<h2)/gi).map((section, index) => {
+    const words = section.split(/\s+/);
+    const isExpanded = expandedSections.includes(index);
+    const shouldTruncate = words.length > 120;
+
+    const handleReadMore = () => {
+      setExpandedSections([...expandedSections, index]);
+    };
+
     return (
       <div key={index} className={styles.gridItem}>
-        <div dangerouslySetInnerHTML={{ __html: section }} />
+        <div
+          dangerouslySetInnerHTML={{
+            __html:
+              isExpanded || !shouldTruncate
+                ? section
+                : words.slice(0, 120).join(" ") + "...",
+          }}
+        />
+        {shouldTruncate && !isExpanded && (
+          <a onClick={handleReadMore} className={styles.content}>
+            Read more
+          </a>
+        )}
       </div>
     );
   });
@@ -19,6 +44,10 @@ const splitContentIntoGridItems = (content: string) => {
 };
 
 export default function Supporters({ content }: Props) {
+  const [expandedSections, setExpandedSections] = useState<number[]>(
+    []
+  );
+
   return (
     <div>
       <Layout>
@@ -26,7 +55,11 @@ export default function Supporters({ content }: Props) {
           Supporters
         </h1>
         <div className={styles.content}>
-          {splitContentIntoGridItems(content)}
+          {splitContentIntoGridItems(
+            content,
+            expandedSections,
+            setExpandedSections
+          )}
         </div>
       </Layout>
     </div>
