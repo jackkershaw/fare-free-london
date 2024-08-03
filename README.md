@@ -68,6 +68,7 @@ Website for the Fare Free London Campaign
 - Added colours for subheadings (dark blue)
 - Lazy loaded animations on the site using [lazymotion](https://www.framer.com/motion/lazy-motion/) to add better performance.
 - I realised there was an error where I exposed the API key on posting data to Airtable. I fixed this by wrapping the post request in an async function running on the server-side, rather than on the client-side.
+- Added Umami analytics.
 
 # Running on your machine
 
