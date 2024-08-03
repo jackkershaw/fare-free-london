@@ -25,7 +25,7 @@ export default function Index({ content, featuredImage }: Props) {
           as="image"
         />
       </Head>
-      <div className="grid grid-cols-1 lg:grid-cols-2">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
