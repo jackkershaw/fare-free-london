@@ -72,7 +72,8 @@ Website for the Fare Free London Campaign
 - Links on the get involved were appearing just as plain links, which didn't look great. I changed them to buttons using some custom CSS, and advised the client to just write what they wanted the button to say, adding the link to the text (i.e. don't write out the whole link, just "donate").
 - I realised links on the site did not follow "target=\_blank", which meant that visitors were often being directed away from the site. Opening a new tab increases the time visitors spend on the site. I implemented this by adding a use effect hook, to add target=\_blank to any links. I did this across all pages consuming GraphQL data.
 - On the news page, clicking on the news articles titles was linking to the article, but clicking the preview wasn't. I fixed this by changing the link to wrap round both the title and the preview.
--
+- Added caching with W3 Cache on the wordpress side of the site. This claimed to reduce time to first byte by 50%.
+- Made a shareable analytics page for the client [here](https://umami.jackkershaw.pp.ua/share/gZdZpgRGd3ke7H3Q/farefreelondon.org).
 
 # Running on your machine
 
