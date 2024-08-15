@@ -21,16 +21,16 @@ export default function PostPreview({
             slug={slug}
           />
         )}
-        <h1 className="text-2xl text-link hover:text-hover capitalize">
-          <Link
-            href={`/posts/${slug}`}
+        <Link href={`/posts/${slug}`}>
+          <h1
+            className="text-2xl text-link hover:text-hover capitalize"
             dangerouslySetInnerHTML={{ __html: title }}
-          ></Link>
-        </h1>
-        <div
-          className="font-serif text-lg"
-          dangerouslySetInnerHTML={{ __html: sentence }}
-        />
+          ></h1>
+          <div
+            className="font-serif text-lg"
+            dangerouslySetInnerHTML={{ __html: sentence }}
+          />
+        </Link>
       </div>
     </div>
   );

@@ -4,7 +4,7 @@ import { getEventsPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
 import styles from "./GetInvolved.module.css";
 import Form from "../components/form";
-
+import { useEffect } from "react";
 interface Props {
   content: string;
   featuredImage: {
@@ -16,6 +16,14 @@ interface Props {
 }
 
 const Events: React.FC<Props> = ({ content, featuredImage }) => {
+  useEffect(() => {
+    const links = document.querySelectorAll(`.${styles.content} a`);
+    links.forEach((link) => {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    });
+  }, [content]);
+
   return (
     <Layout>
       <div className="w-full min-h-screen">

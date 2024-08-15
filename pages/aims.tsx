@@ -3,6 +3,7 @@ import Image from "next/image";
 import { getAboutPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
 import styles from "./AimsPage.module.css";
+import { useEffect } from "react";
 
 interface Props {
   content: string;
@@ -15,6 +16,14 @@ interface Props {
 }
 
 export default function About({ content, featuredImage }: Props) {
+  useEffect(() => {
+    const links = document.querySelectorAll(`.${styles.content} a`);
+    links.forEach((link) => {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    });
+  }, [content]);
+
   return (
     <div>
       <Layout>

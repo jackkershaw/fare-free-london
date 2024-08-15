@@ -12,7 +12,7 @@
 }
 
 .content a {
-  @apply w-full rounded-lg bg-link px-4 py-3 font-medium shadow-md hover:bg-hover focus:outline-none focus:ring-2 focus:ring-hover focus:ring-opacity-50 flex items-center justify-center lg:px-3 lg:py-1.5 no-underline text-white;
+  @apply w-full rounded-lg bg-link px-4 py-3 font-medium shadow-md hover:bg-hover focus:outline-none focus:ring-2 focus:ring-hover focus:ring-opacity-50 flex items-center justify-center lg:p-3 no-underline text-white my-10;
 }
 
 .content ul,

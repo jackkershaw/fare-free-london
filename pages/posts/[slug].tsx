@@ -19,12 +19,21 @@ export default function Post({ post, posts }) {
   const router = useRouter();
   const morePosts = posts?.edges;
 
+  // Redirect to 404 page if post is not found
   if (!router.isFallback && !post?.slug) {
     useEffect(() => {
       window.location.href = "/404";
     }, []);
     return null;
   }
+
+  useEffect(() => {
+    const links = document.querySelectorAll(".post-content a");
+    links.forEach((link) => {
+      link.setAttribute("target", "_blank");
+      link.setAttribute("rel", "noopener noreferrer");
+    });
+  }, [post.content]);
 
   const strippedExcerpt = post?.excerpt
     ? post.excerpt.replace(/<[^>]+>/g, " ").replace(/&#[^\s;]+;/g, "")
@@ -46,7 +55,6 @@ export default function Post({ post, posts }) {
                 name="keywords"
                 content="free, public, transport, London, tube, train, bus, metro, rail, car, taxi, public transport, fare-free transit, public transport equality, sustainable transport, climate action, social justice, environmental benefits, low-income support, air pollution reduction, Greater London Authority, free transit benefits, public service transport, TFL, Transport for London, Free London, Free things to do in London, London cost of living, Sadiq Khan"
               />
-
               <meta name="robots" content="index, follow" />
               <meta name="author" content="Fare Free London" />
               <title>{`${post.title} | Fare Free London`}</title>
@@ -89,8 +97,9 @@ export default function Post({ post, posts }) {
               title={post.title}
               coverImage={post.featuredImage}
             />
-            <PostBody content={post.content} />
-            {/* only show if pdf exists on page */}
+            <div className="post-content">
+              <PostBody content={post.content} />
+            </div>
             {post.pdf?.pdf?.node?.mediaItemUrl && (
               <div className="mx-auto max-w-2xl pb-10">
                 <div className="flex flex-row justify-end">
@@ -180,8 +189,4 @@ export const getStaticPaths: GetStaticPaths = async () => {
       allPosts.edges.map(({ node }) => `/posts/${node.slug}`) || [],
     fallback: true,
   };
-};
-
-type Props = {
-  params: { id: string };
 };
