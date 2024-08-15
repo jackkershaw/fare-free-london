@@ -69,6 +69,7 @@ Website for the Fare Free London Campaign
 - Lazy loaded animations on the site using [lazymotion](https://www.framer.com/motion/lazy-motion/) to add better performance.
 - I realised there was an error where I exposed the API key on posting data to Airtable. I fixed this by wrapping the post request in an async function running on the server-side, rather than on the client-side.
 - Added Umami analytics.
+- Links on the get involved were appearing just as plain links, which didn't look great. I changed them to buttons using some custom CSS, and advised the client to just write what they wanted the button to say, adding the link to the text (i.e. don't write out the whole link, just "donate").
 
 # Running on your machine
 
