@@ -11,3 +11,5 @@ local-only
 
 # Million Lint
 .million
+
+*storybook.log

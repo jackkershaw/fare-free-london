@@ -12,7 +12,9 @@
     "build": "next build",
     "postbuild": "next-sitemap",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@iconify/json": "^2.2.231",
@@ -38,11 +40,21 @@
     "vercel": "^32.3.0"
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^1.6.1",
     "@fullhuman/postcss-purgecss": "^6.0.0",
     "@iconify/tailwind": "^0.1.4",
+    "@storybook/addon-essentials": "^8.2.9",
+    "@storybook/addon-interactions": "^8.2.9",
+    "@storybook/addon-links": "^8.2.9",
+    "@storybook/addon-onboarding": "^8.2.9",
+    "@storybook/blocks": "^8.2.9",
+    "@storybook/nextjs": "^8.2.9",
+    "@storybook/react": "^8.2.9",
+    "@storybook/test": "^8.2.9",
     "@tailwindcss/typography": "^0.5.12",
     "autoprefixer": "10.4.7",
     "postcss": "8.4.31",
+    "storybook": "^8.2.9",
     "tailwindcss": "^3.0.24"
   }
 }
