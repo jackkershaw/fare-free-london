@@ -1,5 +1,6 @@
 import SocialIcons from "./social-icons";
 import Link from "next/link";
+import Button from "./button";
 
 export default function Footer() {
   return (
@@ -11,9 +12,7 @@ export default function Footer() {
             aria-label="link to the get involved page"
             className="mt-8 lg:mr-10 lg:mt-0 lg:pt-10 flex"
           >
-            <button className="w-full rounded-lg bg-link px-4 py-3 font-medium shadow-md hover:bg-hover focus:outline-none focus:ring-2 focus:ring-hover focus:ring-opacity-50 flex items-center justify-center lg:px-3 lg:py-1.5">
-              <p className="text-white">Get Involved</p>
-            </button>
+            <Button text="Get involved" />
           </Link>
           <div className="hidden lg:flex">
             <SocialIcons />
