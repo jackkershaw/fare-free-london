@@ -17,7 +17,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
-    "@iconify/json": "^2.2.233",
+    "@iconify/json": "^2.2.234",
     "@million/lint": "^1.0.0-rc.80",
     "@types/node": "^18.19.43",
     "@types/react": "^18.0.15",
