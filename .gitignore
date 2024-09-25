@@ -13,3 +13,11 @@ local-only
 .million
 
 *storybook.log
+.DS_Store
+components/.DS_Store
+pages/.DS_Store
+planning/.DS_Store
+planning/inspo/.DS_Store
+public/.DS_Store
+public/favicon/.DS_Store
+public/images/.DS_Store
