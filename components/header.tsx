@@ -91,7 +91,7 @@ export default function Header() {
         {/* desktop menu */}
         <div className="hidden lg:flex flex-row lg:flex-col lg:justify-end">
           <div className="justify-end space-x-12 w-full flex flex-col lg:flex-row z-50 bg-darkerBg">
-            <div className="flex flex-row items-center space-x-10 text-3xl font-sans font-bold pb-6">
+            <div className="flex flex-row items-center space-x-10 text-2xl font-sans font-bold pb-6">
               <Link
                 href="/aims"
                 className="text-link hover:text-hover active:text-link"
@@ -115,8 +115,16 @@ export default function Header() {
                 Supporters
               </Link>
               <Link
-                href="/getinvolved"
+                href="/resources"
                 className="text-link hover:text-hover active:text-link"
+                aria-label="link to the supporters page"
+                onClick={closeMenu}
+              >
+                Resources
+              </Link>
+              <Link
+                href="/getinvolved"
+                className="text-link hover:text-hover active:text-link whitespace-nowrap"
                 aria-label="link to the get involved page"
               >
                 Get Involved

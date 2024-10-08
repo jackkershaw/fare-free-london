@@ -282,6 +282,29 @@ export async function getEventsPageContent(eventsPageSlug = "events") {
   return { content, featuredImage };
 }
 
+export async function getResourcesPageContent(
+  ResourcesPageSlug = "resources"
+) {
+  const data = await fetchAPI(`
+  query getAboutPageContent {
+    pages(where: {name: "resources"}) {
+      nodes {
+        content
+        featuredImage {
+          node {
+            altText
+            sourceUrl
+          }
+        }
+      }
+    }
+  }
+      `);
+  const content = data?.pages?.nodes[0]?.content || "";
+  const featuredImage = data?.pages?.nodes[0]?.featuredImage || "";
+  return { content, featuredImage };
+}
+
 export async function getCategories() {
   const data = await fetchAPI(`
 query allcategories {
