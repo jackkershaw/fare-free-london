@@ -1,5 +1,5 @@
 import Layout from "../components/layout";
-import { getAllPostsForHome, getCategories } from "../lib/api";
+import { getAllPostsForHome } from "../lib/api";
 import { GetStaticProps } from "next";
 import dynamic from "next/dynamic";
 
