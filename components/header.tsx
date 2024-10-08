@@ -76,6 +76,14 @@ export default function Header() {
                 >
                   Supporters
                 </Link>
+<Link
+                  href="/resources"
+                  className="text-link hover:text-hover active:text-link"
+                  aria-label="link to the resources page"
+                  onClick={closeMenu}
+                >
+                  Resources
+                </Link>
                 <Link
                   href="/getinvolved"
                   className="text-link hover:text-hover active:text-link"
