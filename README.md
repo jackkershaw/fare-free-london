@@ -75,7 +75,7 @@ Website for the Fare Free London Campaign
 - Added caching with W3 Cache on the wordpress side of the site. This claimed to reduce time to first byte by 50%.
 - Made a shareable analytics page for the client [here](https://umami.jackkershaw.pp.ua/share/gZdZpgRGd3ke7H3Q/farefreelondon.org).
 
-# Running on your machine
+# Running on your machine
 
 ## Run the Frontend (Next.js) in development mode:
 
