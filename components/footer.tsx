@@ -41,7 +41,7 @@ export default function Footer() {
           <p className="py-2 lg:py-0">
             Source on{" "}
             <a
-              href="https://github.com/jones58/fare-free-london"
+              href="https://github.com/jackkershaw/fare-free-london"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-link hover:text-hover active:text-link"

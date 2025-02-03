@@ -21,8 +21,8 @@ Website for the Fare Free London Campaign
 - The site was looking quite cold so i wanted to add some colour. I added an svg from another project I did a few years ago, with bright colourful lines. At first I wanted this at the bottom and top, but found having at the top a bit overwhelming. I kept it at the bottom and wrapped it in a component as "tubelines" - in a way it reminds me of how the old OpenAI site used to look under the footer.
 - Removed frontpage component and added to index.tsx. Receiving content through Wordpress to allow client to control content.
 - Used Responsively to get responsive design right - see my LinkedIn about this [here](https://www.linkedin.com/posts/jackkershaw_webdevelopment-responsivedesign-devtools-activity-7209579627588005889-Bwso?utm_source=share&utm_medium=member_desktop).
-- Added a sign up form to the site. Since I was on a tight deadline from the client, I used a similar approach to the form on my [Right to the City project](https://github.com/jones58/right-to-city).
-- Add back to top button, again taken from my [Right to the City project](https://github.com/jones58/right-to-city). I then edited the component as needed for this project.
+- Added a sign up form to the site. Since I was on a tight deadline from the client, I used a similar approach to the form on my [Right to the City project](https://github.com/jackkershaw/right-to-city).
+- Add back to top button, again taken from my [Right to the City project](https://github.com/jackkershaw/right-to-city). I then edited the component as needed for this project.
 - Added get involved button to the footer to drive traffic to the get involved page. I put it here because I wanted people to see it after scrolling to bottom.
 - Added deploy hooks using Vercel and WP Webhooks - a Wordpress plugin. This means the site gets rebuilt when posts are created, updated or deleted on Wordpress. This provided a quick and easy way to trigger a site rebuild, without worrying about authentication or API routes.
 
@@ -64,7 +64,7 @@ Website for the Fare Free London Campaign
   - added canonical tags
 - There was an issue where alt text wasn't showing for images on the news page (and the subpages: posts themselves). I tried several solutions, including tidying how props are passed to components, but in the end it was a case of editing the API so a query returned alt text for images on the news page.
 - On the Supporters page, I had some issues with getting the layout right on desktop. I realised that the content could be split into divs by h2, so I processed the content into separate divs by the h2 element.
-- A member of the public (thanks ruthkonyn!) added [an issue](https://github.com/jones58/fare-free-london/issues/1) to this repository (since the github url is on the site), which I fixed by centring the text on the aims page for better readability on desktop.
+- A member of the public (thanks ruthkonyn!) added [an issue](https://github.com/jackkershaw/fare-free-london/issues/1) to this repository (since the github url is on the site), which I fixed by centring the text on the aims page for better readability on desktop.
 - Added colours for subheadings (dark blue)
 - Lazy loaded animations on the site using [lazymotion](https://www.framer.com/motion/lazy-motion/) to add better performance.
 - I realised there was an error where I exposed the API key on posting data to Airtable. I fixed this by wrapping the post request in an async function running on the server-side, rather than on the client-side.
@@ -92,7 +92,7 @@ npm run dev
 
 - The basic structure of the site is built in Wordpress - all the content for the articles and the pages is stored there.
 
-- On top of this, I've made a custom design for displaying the content well, making it interactive and including colours, fonts and animations. You can see this on farefreelondon.org What’s on here can’t be edited directly, but you can send me an email on jackkershaw@protonmail.com and I'll see what I can do. I plan to make a few edits to it Thursday onwards.
+- On top of this, I've made a custom design for displaying the content well, making it interactive and including colours, fonts and animations. You can see this on farefreelondon.org What’s on here can’t be edited directly, but you can send me an email on hello@jackkershaw.net and I'll see what I can do.
 
 ### Editing the site
 

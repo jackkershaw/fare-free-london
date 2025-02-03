@@ -2,9 +2,9 @@
   "name": "fare-free-london",
   "version": "1.0.0",
   "license": "MIT",
-  "author": "jones58",
+  "author": "jackkershaw",
   "description": "Fare Free London",
-  "repository": "https://github.com/jones58/fare-free-london",
+  "repository": "https://github.com/jackkershaw/fare-free-london",
   "homepage": "https://farefreelondon.org",
   "private": true,
   "scripts": {
