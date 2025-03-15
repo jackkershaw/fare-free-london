@@ -1,14 +1,12 @@
 .content {
-  @apply prose;
+  @apply prose mx-auto max-w-3xl;
 }
 
 .content p,
 .content ul,
 .content ol,
 .content blockquote {
-  @apply font-serif;
-  @apply prose-xl;
-  @apply leading-normal;
+  @apply font-serif prose-xl leading-normal;
 }
 
 .content a {
@@ -54,7 +52,7 @@
 }
 
 .content figcaption {
-  @apply text-center text-sm;
+  @apply text-sm;
 }
 
 .content blockquote {

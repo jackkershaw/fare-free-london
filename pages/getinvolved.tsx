@@ -25,27 +25,30 @@ const Events: React.FC<Props> = ({ content, featuredImage }) => {
   }, [content]);
 
   return (
-    <Layout>
-      <div className="w-full min-h-screen">
-        <h1 className="text-4xl">Get Involved</h1>
-        <div
-          className={`font-serif text-lg prose ${styles.content}`}
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-5 pb-10">
-          <Form />
-          <div className="flex items-center justify-end">
+    <div>
+      <Layout>
+        <div>
+          <h1 className="text-4xl lg:text-left">Get Involved</h1>
+          <div className="pt-4 lg:w-[40vw] lg:h-auto lg:mx-auto">
             <Image
               width={1080}
               height={980}
               src={featuredImage.node.sourceUrl}
               alt={featuredImage.node.altText}
-              className="rounded-lg object-cover object-center"
+              className="rounded-lg object-cover lg:mx-auto"
+              priority
             />
           </div>
+          <div className={`${styles.content} `}>
+            <div dangerouslySetInnerHTML={{ __html: content }}></div>
+          </div>
+          <div className="mt-12 max-w-2xl mx-auto">
+            <h2 className="text-3xl mb-6">Contact Us</h2>
+            <Form />
+          </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </div>
   );
 };
 

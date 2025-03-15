@@ -1,19 +1,13 @@
 import Layout from "../components/layout";
 import { getResourcesPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
-import styles from "./IndexPage.module.css";
+import styles from "./GetInvolved.module.css";
 import { useEffect } from "react";
 interface Props {
   content: string;
-  featuredImage: {
-    node: {
-      sourceUrl: string;
-      altText: string;
-    };
-  };
 }
 
-const Resources: React.FC<Props> = ({ content, featuredImage }) => {
+const Resources: React.FC<Props> = ({ content }) => {
   useEffect(() => {
     const links = document.querySelectorAll(`.${styles.content} a`);
     links.forEach((link) => {
@@ -24,11 +18,11 @@ const Resources: React.FC<Props> = ({ content, featuredImage }) => {
 
   return (
     <Layout>
-      <div className="w-full min-h-screen">
-        <div
-          className={`font-serif text-lg prose ${styles.content}`}
-          dangerouslySetInnerHTML={{ __html: content }}
-        />
+      <div>
+        <h1 className="text-4xl lg:text-left">Resources</h1>
+        <div className={`${styles.content}`}>
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
+        </div>
       </div>
     </Layout>
   );
