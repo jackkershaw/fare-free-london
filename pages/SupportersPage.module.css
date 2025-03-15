@@ -1,17 +1,25 @@
 .content {
-  @apply prose mx-auto max-w-3xl;
+  @apply prose mx-auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
 }
 
-.content iframe {
-  @apply block w-[200px] h-[420px] rounded-lg my-10 bg-black;
+.gridItem {
+  @apply flex flex-col items-center bg-darkerBg/60 hover:bg-darkerBg/80 p-5 rounded-lg;
+  min-height: 600px;
+}
+
+.content iframe,
+.content a[href*="youtu"] {
+  @apply block w-[200px] h-[420px] rounded-lg my-10 bg-black hover:scale-105;
   border: 10px solid #eb5a4a;
   box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
   margin-inline: auto;
 }
 
-.gridItem {
-  @apply flex flex-col items-center;
-  width: 100%;
+.content img {
+  @apply mx-auto;
 }
 
 .content p,
