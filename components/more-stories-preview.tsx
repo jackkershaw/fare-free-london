@@ -12,7 +12,7 @@ export default function PostPreview({
     : "";
 
   return (
-    <div className="mb-6 lg:mb-0 bg-darkerBg bg-opacity-30 hover:bg-opacity-50 p-8 rounded-lg">
+    <div className="mb-6 lg:mb-0 border-darkerBg hover:bg-darkerBg/40 hover:shadow-sm border-2 p-8 rounded-lg">
       <div className="flex flex-col space-y-2 lg:space-y-3">
         {coverImage && (
           <CoverImage
