@@ -16,7 +16,9 @@ export default function News({ allPosts: { edges } }) {
   return (
     <div>
       <Layout>
-        <h1 className="text-4xl text-center lg:text-left">News</h1>
+        <h1 className="text-4xl text-center lg:text-left pb-3">
+          News
+        </h1>
         <div className="lg:grid lg:grid-cols-3 lg:gap-x-5 lg:gap-y-5">
           {Posts.map(({ node }) => (
             <PostPreview
