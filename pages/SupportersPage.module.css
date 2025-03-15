@@ -1,25 +1,17 @@
 .content {
-  @apply prose lg:grid lg:gap-8 lg:grid-cols-3;
-}
-
-@media (min-width: 1024px) {
-  .content {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-}
-
-.gridItem {
-  @apply lg:p-0;
-}
-
-.gridItem div {
-  @apply lg:flex lg:flex-col;
+  @apply prose mx-auto max-w-3xl;
 }
 
 .content iframe {
-  @apply block mx-auto lg:mx-5 w-[245px] h-[420px] rounded-lg my-10 bg-black;
+  @apply block w-[200px] h-[420px] rounded-lg my-10 bg-black;
   border: 10px solid #eb5a4a;
   box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
+  margin-inline: auto;
+}
+
+.gridItem {
+  @apply flex flex-col items-center;
+  width: 100%;
 }
 
 .content p,
