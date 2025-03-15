@@ -1,5 +1,5 @@
 .content {
-  @apply prose lg:grid lg:gap-8 lg:grid-cols-4;
+  @apply prose lg:grid lg:gap-8 lg:grid-cols-3;
 }
 
 @media (min-width: 1024px) {
@@ -22,18 +22,11 @@
   box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
 }
 
-.blankSpace {
-  width: 245px;
-  height: 420px;
-  margin: 10px auto;
-  background-color: transparent;
-}
-
 .content p,
 .content ul,
 .content ol,
 .content blockquote {
-  @apply font-serif prose-xl leading-normal text-center lg:text-left;
+  @apply font-serif prose-xl leading-normal;
 }
 
 .content a {
@@ -67,11 +60,11 @@
 }
 
 .content h1 {
-  @apply text-center lg:text-left;
+  margin: 5px;
 }
 
 .content h2 {
-  @apply text-3xl mt-12 mb-4 text-center lg:text-left text-subHeading;
+  @apply text-3xl mt-14 mb-2 lg:text-left text-subHeading;
 }
 
 .content h3 {
