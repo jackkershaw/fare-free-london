@@ -128,20 +128,32 @@ export default function Post({ post, posts }) {
               <Link
                 href={`https://twitter.com/intent/tweet?text=${post.title}&url=https://farefreelondon.org/posts/${post.slug}`}
                 title="Share on Twitter"
+                target="_blank"
               >
                 <span className="icon-[mdi--twitter] text-link hover:text-hover active:text-link"></span>
+              </Link>
+              <Link
+                href={`https://bsky.app/intent/compose?text=${encodeURIComponent(
+                  `${post.title}: https://farefreelondon.org/posts/${post.slug}`
+                )}`}
+                title="Share on Bluesky"
+                target="_blank"
+              >
+                <span className="icon-[ri--bluesky-fill] text-link hover:text-hover active:text-link"></span>
               </Link>
               <Link
                 href={`https://wa.me/?text=${encodeURIComponent(
                   `${post.title}: https://farefreelondon.org/posts/${post.slug}`
                 )}`}
                 title="Share on WhatsApp"
+                target="_blank"
               >
                 <span className="icon-[mdi--whatsapp] text-link hover:text-hover active:text-link"></span>
               </Link>
               <Link
                 href={`https://www.facebook.com/sharer/sharer.php?u=https://farefreelondon.org/posts/${post.slug}`}
                 title="Share on Facebook"
+                target="_blank"
               >
                 <span className="icon-[mdi--facebook] text-link hover:text-hover active:text-link"></span>
               </Link>
@@ -152,13 +164,14 @@ export default function Post({ post, posts }) {
                   "https://farefreelondon.org/posts/" + post.slug
                 )}`}
                 title="Share via Email"
+                target="_blank"
               >
                 <span className="icon-[mdi--email] text-link hover:text-hover active:text-link"></span>
               </Link>
             </div>
           </div>
           <SectionSeparator />
-          <div className="lg:grid lg:grid-cols-4">
+          <div className="lg:grid lg:grid-cols-5">
             <h1 className="pb-6 lg:py-0 text-2xl">Read Next: </h1>
             {morePosts.length > 0 && <MoreStories posts={morePosts} />}
           </div>
