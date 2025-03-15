@@ -51,7 +51,7 @@ export default function Header() {
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
             >
-              <div className="flex flex-col space-y-12 text-4xl font-sans font-bold py-10 pl-5">
+              <div className="flex flex-col space-y-8 text-4xl font-sans font-bold py-10 pl-5">
                 <Link
                   href="/aims"
                   className="text-link hover:text-hover active:text-link"
@@ -76,7 +76,7 @@ export default function Header() {
                 >
                   Supporters
                 </Link>
-<Link
+                <Link
                   href="/resources"
                   className="text-link hover:text-hover active:text-link"
                   aria-label="link to the resources page"
