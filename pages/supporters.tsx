@@ -14,9 +14,17 @@ const splitContentIntoGridItems = (
   setExpandedSections
 ) => {
   const sections = content.split(/(?=<h2)/gi).map((section, index) => {
-    const words = section.split(/\s+/);
+    // Extract title and content separately
+    const titleMatch = section.match(/<h2[^>]*>(.*?)<\/h2>/s);
+    const title = titleMatch ? titleMatch[1] : "";
+    const mainContent = section
+      .replace(/<h2[^>]*>.*?<\/h2>/s, "")
+      .trim();
+
+    // Split content by words but preserve HTML tags
+    const words = mainContent.match(/(<[^>]+>|[^<\s]+|\s+)/g) || [];
     const isExpanded = expandedSections.includes(index);
-    const shouldTruncate = words.length > 120;
+    const shouldTruncate = words.length > 150;
 
     const handleReadMore = () => {
       setExpandedSections([...expandedSections, index]);
@@ -24,21 +32,22 @@ const splitContentIntoGridItems = (
 
     return (
       <div key={index} className={styles.gridItem}>
+        {title && <h2>{title}</h2>}
         <div
           dangerouslySetInnerHTML={{
             __html:
               isExpanded || !shouldTruncate
-                ? section
-                : words.slice(0, 120).join(" ") + "...",
+                ? mainContent
+                : words.slice(0, 150).join("") + "...",
           }}
         />
         {shouldTruncate && !isExpanded && (
-          <a
+          <button
             onClick={handleReadMore}
             className={styles.readMoreButton}
           >
             Read more
-          </a>
+          </button>
         )}
       </div>
     );
