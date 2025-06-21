@@ -6,6 +6,7 @@ import { motion, LazyMotion, domAnimation } from "framer-motion";
 import dynamic from "next/dynamic";
 import localFont from "next/font/local";
 import "../styles/index.css";
+
 const P22Underground = localFont({
   src: [
     {
@@ -55,34 +56,36 @@ export default function RootLayout({ children }) {
         <div>
           <Header />
           <div className="bg-lighterBg text-black px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
-          <LazyMotion features={domAnimation}>
-            <motion.div
-              initial="pageInitial"
-              animate="pageAnimate"
-              variants={{
-                pageInitial: {
-                  y: 20,
-                  opacity: 0,
-                  scale: 0.99,
-                },
-                pageAnimate: {
-                  y: 0,
-                  opacity: 1,
-                  scale: 1,
-                  transition: {
-                    duration: 0.4,
-                    ease: "easeInOut",
-                    when: "beforeChildren",
+            <LazyMotion features={domAnimation}>
+              <motion.div
+                initial="pageInitial"
+                animate="pageAnimate"
+                variants={{
+                  pageInitial: {
+                    y: 20,
+                    opacity: 0,
+                    scale: 0.99,
                   },
-                },
-              }}
-            >
-              <div className="bg-lighterBg text-black px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
-                {children}
-              </div>
-              <BackToTop />
-            </motion.div>
-          </LazyMotion>
+                  pageAnimate: {
+                    y: 0,
+                    opacity: 1,
+                    scale: 1,
+                    transition: {
+                      duration: 0.4,
+                      ease: "easeInOut",
+                      when: "beforeChildren",
+                    },
+                  },
+                }}
+              >
+                <div className="bg-lighterBg text-black px-5 lg:px-10 lg:mx-10 min-h-[60vh] lg:mt-10 lg:py-5">
+                  {children}
+                </div>
+                <BackToTop />
+              </motion.div>
+            </LazyMotion>
+          </div>
+        </div>
       </body>
     </html>
   );
