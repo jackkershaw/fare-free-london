@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Layout from "../components/layout";
+import Layout from ".././components/layout";
 import { getSupportersPageContent } from "../lib/api";
 import { GetStaticProps } from "next";
 import styles from "./SupportersPage.module.css";
