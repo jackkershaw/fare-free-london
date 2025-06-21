@@ -16,14 +16,6 @@ interface Props {
 }
 
 export default function About({ content, featuredImage }: Props) {
-  useEffect(() => {
-    const links = document.querySelectorAll(`.${styles.content} a`);
-    links.forEach((link) => {
-      link.setAttribute("target", "_blank");
-      link.setAttribute("rel", "noopener noreferrer");
-    });
-  }, [content]);
-
   return (
     <div>
       <Layout>
