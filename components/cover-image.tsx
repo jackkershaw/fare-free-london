@@ -20,7 +20,7 @@ export default function CoverImage({
   const image = (
     <Image
       fill
-      alt={coverImage?.node?.altText}
+      alt={coverImage?.node?.altText || title}
       src={coverImage?.node.sourceUrl}
       className="object-cover object-center rounded-lg"
     />
