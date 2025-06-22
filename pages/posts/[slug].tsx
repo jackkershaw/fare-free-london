@@ -206,7 +206,6 @@ export default function Post({ post, posts }) {
               </Link>
             </div>
           </div>
-          Add comment More actions
           <SectionSeparator />
           <div className="lg:grid lg:grid-cols-5">
             <h1 className="pb-6 lg:py-0 text-2xl">Read Next: </h1>
