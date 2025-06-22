@@ -1,3 +1,5 @@
+"use client";
+
 import { useState, ChangeEvent, FormEvent } from "react";
 import Swal from "sweetalert2";
 
