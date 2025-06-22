@@ -12,9 +12,9 @@ export default async function SupportersPage() {
   const content = data.content || "";
 
   return (
-    <div>
+    <main>
       <h1 className="text-4xl text-center lg:text-left">Supporters</h1>
       <SplitContent content={content} />
-    </div>
+    </main>
   );
 }
