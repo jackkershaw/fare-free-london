@@ -2,6 +2,16 @@ export default function SocialIcons() {
   return (
     <div className="flex flex-row lg:items-end justify-between space-x-5 lg:space-x-10 text-3xl">
       <a
+        href="https://bsky.app/profile/farefreelondon.bsky.social"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="link to the Fare Free London Bluesky page"
+        className="flex items-end justify-end"
+      >
+        <span className="icon-[ri--bluesky-fill] text-link hover:text-hover active:text-link p-5 lg:p-0"></span>
+      </a>
+
+      <a
         href="https://x.com/FareFreeLondon"
         target="_blank"
         rel="noopener noreferrer"
