@@ -71,9 +71,7 @@
 .content article {
   @apply rounded-lg px-10 mb-14;
   border: 10px solid #eb5a4a;
-  box-shadow:
-    0 0 0 10px #4760a5,
-    0 0 0 20px #eb5a4a;
+  box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
 }
 
 .content a {
