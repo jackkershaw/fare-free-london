@@ -1,4 +1,3 @@
-import { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Head from "next/head";
 import Link from "next/link";
@@ -6,7 +5,6 @@ import PostBody from "../../../components/post-body";
 import MoreStories from "../../../components/more-stories";
 import PostHeader from "../../../components/post-header";
 import SectionSeparator from "../../../components/section-separator";
-import PostTitle from "../../../components/post-title";
 import {
   getAllPostsWithSlug,
   getPostAndMorePosts,
