@@ -4,7 +4,6 @@ import styles from "./Resources.module.css";
 export default async function Resources() {
   const data = await getResourcesPageContent();
   const content = data.content;
-  const featuredImage = data.featuredImage;
 
   return (
     <div>
