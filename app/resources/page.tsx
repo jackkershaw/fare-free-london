@@ -1,5 +1,5 @@
 import { getResourcesPageContent } from "../../lib/api";
-import styles from "./GetInvolved.module.css";
+import styles from "./Resources.module.css";
 
 export default async function Resources() {
   const data = await getResourcesPageContent();
