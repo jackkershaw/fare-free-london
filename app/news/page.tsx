@@ -5,6 +5,13 @@ const PostPreview = dynamic(
   () => import("../../components/more-stories-preview")
 );
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "News",
+  description: "News about the Fare Free London Campaign",
+};
+
 export default async function News() {
   const allPosts = await getAllPostsForHome({ preview: false });
   const Posts = allPosts.edges;

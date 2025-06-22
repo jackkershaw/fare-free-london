@@ -3,6 +3,13 @@ import { getEventsPageContent } from "../../lib/api";
 import styles from "./GetInvolved.module.css";
 import Form from "../../components/form";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Get Involved",
+  description: "Get involved in the Fare Free London Campaign",
+};
+
 export default async function Events() {
   const data = await getEventsPageContent();
   const content = data.content;

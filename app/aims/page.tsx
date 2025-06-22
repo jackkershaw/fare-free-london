@@ -2,6 +2,13 @@ import Image from "next/image";
 import { getAboutPageContent } from "../../lib/api";
 import styles from "./AimsPage.module.css";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About",
+  description: "Find out more about the Fare Free London Campaign",
+};
+
 export default async function About() {
   const data = await getAboutPageContent();
   let content = data.content;
