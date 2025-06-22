@@ -166,6 +166,13 @@ export async function getPostAndMorePosts(slug) {
     }
   );
 
+  if (!data?.post) {
+    return {
+      post: null,
+      posts: null,
+    };
+  }
+
   const originalPostCategory = data.post.categories.edges.map(
     ({ node }) => node.name
   );
