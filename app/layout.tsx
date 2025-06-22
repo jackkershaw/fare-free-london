@@ -1,9 +1,12 @@
 "use client";
 
 import Header from "../components/header";
+import Footer from "../components/footer";
+import TubeLines from "../components/tubelines";
+import BackToTop from "../components/back-to-top";
 import Meta from "../components/meta";
 import { motion, LazyMotion, domAnimation } from "framer-motion";
-import dynamic from "next/dynamic";
+
 import localFont from "next/font/local";
 import "../styles/index.css";
 
@@ -21,18 +24,6 @@ const P22Underground = localFont({
     },
   ],
   variable: "--font-P22Underground",
-});
-
-const BackToTop = dynamic(() => import("../components/back-to-top"), {
-  ssr: false,
-});
-
-const TubeLines = dynamic(() => import("../components/tubelines"), {
-  ssr: false,
-});
-
-const Footer = dynamic(() => import("../components/footer"), {
-  ssr: false,
 });
 
 export default function RootLayout({ children }) {
@@ -86,6 +77,8 @@ export default function RootLayout({ children }) {
             </LazyMotion>
           </div>
         </div>
+        <Footer></Footer>
+        <TubeLines></TubeLines>
       </body>
     </html>
   );
