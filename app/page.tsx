@@ -26,15 +26,13 @@ export default async function Index() {
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
-        <div>
-          <Image
-            width="1080"
-            height="980"
-            src={featuredImage.node.sourceUrl}
-            alt={featuredImage.node.altText}
-            className="rounded-lg object-cover"
-          />
-        </div>
+        <Image
+          width="1080"
+          height="980"
+          src={featuredImage.node.sourceUrl}
+          alt={featuredImage.node.altText}
+          className="rounded-lg object-cover"
+        />
       </div>
     </>
   );
