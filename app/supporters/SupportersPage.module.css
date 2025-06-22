@@ -6,13 +6,13 @@
 }
 
 .gridItem {
-  @apply flex flex-col items-center bg-darkerBg/60 hover:bg-darkerBg/80 p-5 rounded-lg;
-  min-height: 600px;
+  @apply flex flex-col items-center bg-darkerBg/60 hover:bg-darkerBg/80 p-5 rounded-lg min-h-[600px];
+  /* Better min-height syntax */
 }
 
 .content iframe,
 .content a[href*="youtu"] {
-  @apply block w-[200px] h-[420px] rounded-lg my-10 bg-black hover:scale-105;
+  @apply block w-[300px] h-[500px] rounded-lg my-10 bg-black hover:scale-105 transition-transform duration-300 ease-in-out;
   border: 10px solid #eb5a4a;
   box-shadow: 0 0 0 10px #4760a5, 0 0 0 20px #eb5a4a;
   margin-inline: auto;
@@ -30,11 +30,13 @@
 }
 
 .content a {
-  @apply underline underline-offset-2 text-link hover:text-hover active:text-link;
+  @apply underline underline-offset-2 text-link hover:text-hover active:text-link cursor-pointer;
+  outline-offset: 2px;
 }
 
 .readMoreButton {
-  @apply underline underline-offset-2 text-link hover:text-hover active:text-link prose-xl text-center  lg:text-left;
+  @apply underline underline-offset-2 text-link hover:text-hover active:text-link prose-xl text-center lg:text-left cursor-pointer;
+  user-select: none;
 }
 
 .content ul,
@@ -60,7 +62,7 @@
 }
 
 .content h1 {
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .content h2 {
