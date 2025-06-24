@@ -6,7 +6,7 @@ const BackToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
-    if (window.scrollY > 400) {
+    if (window.scrollY > 100) {
       setIsVisible(true);
     } else {
       setIsVisible(false);
