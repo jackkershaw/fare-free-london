@@ -6,8 +6,6 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Fare Free London",
   description: "Homepage for the Fare Free London Campaign",
-  robots: "index,follow",
-  keywords: "public, transport, London, tube, train, bus",
   openGraph: {
     title: "Fare Free London",
     description: "Homepage for the Fare Free London Campaign",
