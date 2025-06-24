@@ -1,5 +1,4 @@
 import { notFound } from "next/navigation";
-import Head from "next/head";
 import Link from "next/link";
 import PostBody from "../../../components/post-body";
 import MoreStories from "../../../components/more-stories";
@@ -9,11 +8,57 @@ import {
   getAllPostsWithSlug,
   getPostAndMorePosts,
 } from "../../../lib/api";
+import { Metadata } from "next";
 //import { PDFObject } from "react-pdfobject";
 
 interface Props {
   params: {
     slug: string;
+  };
+}
+
+export async function generateMetadata({
+  params,
+}: {
+  params: { slug: string };
+}): Promise<Metadata> {
+  const { slug } = params;
+  const data = await getPostAndMorePosts(slug);
+  const post = data?.post;
+
+  const strippedExcerpt =
+    post?.excerpt
+      ?.replace(/<[^>]+>/g, " ")
+      .replace(/&#[^\s;]+;/g, "") || "";
+
+  const description =
+    strippedExcerpt || "Campaign for free public transport in London";
+
+  return {
+    title: post?.title,
+    robots: "index,follow",
+    description,
+    keywords: "public, transport, London, tube, train, bus",
+    openGraph: {
+      title: post?.title,
+      description,
+      type: "article",
+      url: `https://www.farefreelondon.org/posts/${post?.slug}`,
+      images: [
+        {
+          url: post?.featuredImage?.node.sourceUrl,
+          width: 1200,
+          height: 630,
+          alt: post?.title || "",
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post?.title,
+      description,
+      images: post?.featuredImage?.node.sourceUrl,
+    },
   };
 }
 
@@ -30,69 +75,16 @@ export default async function Page({ params }: Props) {
 
   if (!post?.slug) return notFound();
 
-  const strippedExcerpt =
-    post.excerpt
-      ?.replace(/<[^>]+>/g, " ")
-      .replace(/&#[^\s;]+;/g, "") || "";
-
   return (
     <>
       <article>
-        <Head>
-          <meta
-            name="google-site-verification"
-            content="NV55MkJVtFkcIEdf__HJ_cgUg0GWNaBu4ZxO5WKKyes"
-          />
-          <meta
-            name="keywords"
-            content="free, public, transport, London, tube, train, bus..."
-          />
-          <meta name="robots" content="index, follow" />
-          <meta name="author" content="Fare Free London" />
-          <title>{post.title}</title>
-
-          <meta
-            property="og:image"
-            content={post.featuredImage?.node.sourceUrl}
-          />
-
-          <meta property="og:title" content={post.title} />
-
-          <meta
-            property="og:description"
-            content={
-              strippedExcerpt ||
-              "Campaign for free public transport in London"
-            }
-          />
-
-          <meta name="twitter:card" content="summary_large_image" />
-
-          <meta
-            name="twitter:image"
-            content={post.featuredImage?.node.sourceUrl}
-          />
-
-          <meta name="twitter:title" content={post.title} />
-
-          <meta
-            name="twitter:description"
-            content={
-              strippedExcerpt ||
-              "Campaign for free public transport in London"
-            }
-          />
-        </Head>
-
         <PostHeader
           title={post.title}
           coverImage={post.featuredImage}
         />
-
         <div className="post-content">
           <PostBody content={post.content} />
         </div>
-
         {post.pdf?.pdf?.node?.mediaItemUrl && (
           <div className="mx-auto max-w-2xl pb-10">
             <div className="flex flex-row justify-end">
