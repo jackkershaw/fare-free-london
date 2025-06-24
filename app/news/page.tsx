@@ -1,9 +1,6 @@
 import { getAllPostsForHome } from "../../lib/api";
-import dynamic from "next/dynamic";
 
-const PostPreview = dynamic(
-  () => import("../../components/more-stories-preview")
-);
+import PostPreview from "../../components/more-stories-preview";
 
 import type { Metadata } from "next";
 
