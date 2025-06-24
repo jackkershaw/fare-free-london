@@ -36,6 +36,8 @@ export default async function Index() {
           src={featuredImage.node.sourceUrl}
           alt={featuredImage.node.altText}
           className="rounded-lg object-cover"
+          placeholder="blur"
+          blurDataURL="data:image/jpeg;base64,..."
         />
       </div>
     </>

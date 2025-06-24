@@ -10,6 +10,8 @@ export default function TubeLines() {
         alt="intersecting coloured lines, reminiscent of tube lines"
         className="w-full h-40 pb-2"
         fetchPriority="low"
+        placeholder="blur"
+        blurDataURL="data:image/jpeg;base64,..."
       />
     </div>
   );

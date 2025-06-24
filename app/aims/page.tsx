@@ -25,7 +25,8 @@ export default async function About() {
             src={featuredImage.node.sourceUrl}
             alt={featuredImage.node.altText}
             className="rounded-lg object-cover lg:mx-auto"
-            priority
+            placeholder="blur"
+            blurDataURL="data:image/jpeg;base64,..."
           />
         </div>
         <div className={`${styles.content}`}>

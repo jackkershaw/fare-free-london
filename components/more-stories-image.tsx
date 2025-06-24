@@ -22,6 +22,8 @@ export default function CoverImage({
       fill
       alt={coverImage?.node?.altText || title}
       src={coverImage?.node?.sourceUrl}
+      placeholder="blur"
+      blurDataURL="data:image/jpeg;base64,..."
       className="object-cover object-center min-w-100 max-w-100 hover:scale-110 hover:scale-110 transition-transform duration-300 ease-in-out rounded-lg"
     />
   );

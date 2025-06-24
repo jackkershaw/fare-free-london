@@ -39,7 +39,8 @@ export default function Header() {
                 fill
                 className="object-contain object-center"
                 sizes="(100vw, 100vh)"
-                priority
+                placeholder="blur"
+                blurDataURL="data:image/jpeg;base64,..."
               />
             </div>
           </Link>

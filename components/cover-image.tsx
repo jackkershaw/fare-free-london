@@ -23,6 +23,8 @@ export default function CoverImage({
       alt={coverImage?.node?.altText || title}
       src={coverImage?.node.sourceUrl}
       className="object-cover object-center rounded-lg"
+      placeholder="blur"
+      blurDataURL="data:image/jpeg;base64,..."
     />
   );
   return (
