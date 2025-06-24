@@ -1,12 +1,25 @@
 import { getFrontPageContent } from "../lib/api";
 import styles from "./IndexPage.module.css";
 import Image from "next/image";
-import Head from "next/head";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Fare Free London",
   description: "Homepage for the Fare Free London Campaign",
+  robots: "index,follow",
+  keywords: "public, transport, London, tube, train, bus",
+  openGraph: {
+    title: "Fare Free London",
+    description: "Homepage for the Fare Free London Campaign",
+    url: "https://www.farefreelondon.org/",
+    images: "https://www.farefreelondon.org/images/banner-draft.png",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Fare Free London",
+    description: "Homepage for the Fare Free London Campaign",
+    images: "https://www.farefreelondon.org/images/banner-draft.png",
+  },
 };
 
 export default async function Index() {
@@ -15,13 +28,6 @@ export default async function Index() {
   const featuredImage = data.featuredImage;
   return (
     <>
-      <Head>
-        <link
-          rel="preload"
-          href={featuredImage.node.sourceUrl}
-          as="image"
-        />
-      </Head>
       <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-10">
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
