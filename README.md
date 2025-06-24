@@ -123,4 +123,4 @@ From here it is very easy to create new posts, just click the “add new post”
 
 These are set up to come through on Airtable, and can be accessed via the url.
 
-If you have any other questions about editing the site or getting form submissions, please feel free to email me on jackkershaw@protonmail.com.
+If you have any other questions about editing the site or getting form submissions, please feel free to email me on hello@jackkershaw.net.
