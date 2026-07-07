@@ -21,12 +21,17 @@ export default function CoverImage({
     <Image
       fill
       alt={coverImage?.node?.altText || title}
-      src={coverImage?.node.sourceUrl}
+      src={coverImage?.node?.sourceUrl}
       className="object-cover object-center rounded-lg"
       placeholder="blur"
       blurDataURL="data:image/jpeg;base64,..."
     />
   );
+  
+  if (!coverImage?.node?.sourceUrl) {
+    return null;
+  }
+  
   return (
     <div className="relative min-w-[30vw] min-h-[40vh] lg:min-w-[21vw] lg:min-h-[25vh]">
       {slug ? (

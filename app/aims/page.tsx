@@ -18,17 +18,19 @@ export default async function About() {
     <div>
       <div>
         <h1 className="text-4xl text-center lg:text-left">Aims</h1>
-        <div className="pt-4 lg:w-[40vw] lg:h-auto lg:mx-auto">
-          <Image
-            width="1080"
-            height="980"
-            src={featuredImage.node.sourceUrl}
-            alt={featuredImage.node.altText}
-            className="rounded-lg object-cover lg:mx-auto"
-            placeholder="blur"
-            blurDataURL="data:image/jpeg;base64,..."
-          />
-        </div>
+        {featuredImage?.node?.sourceUrl && (
+          <div className="pt-4 lg:w-[40vw] lg:h-auto lg:mx-auto">
+            <Image
+              width="1080"
+              height="980"
+              src={featuredImage.node.sourceUrl}
+              alt={featuredImage.node.altText || "Featured image"}
+              className="rounded-lg object-cover lg:mx-auto"
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,..."
+            />
+          </div>
+        )}
         <div className={`${styles.content}`}>
           <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
